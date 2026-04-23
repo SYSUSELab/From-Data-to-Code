@@ -11,7 +11,7 @@ permalink: /
 ## A Systematic Review of Quality Issues in LLMs for Code
 
 <div style="margin: 20px 0;">
-  <a href="paper.pdf" class="btn btn-primary">📄 View Paper</a>
+  <a href="{{ '/paper.pdf' | relative_url }}" class="btn btn-primary">📄 View Paper</a>
   <a href="https://github.com/kaifeng-he/From-Data-to-Code" class="btn btn-outline">💻 GitHub Repo</a>
 </div>
 
@@ -37,14 +37,14 @@ Based on this taxonomy, we formalize a causal framework detailing **18 typical p
 ---
 
 <div align="center">
-  <img src="images/paper_collection.png" alt="Overview of the process of paper collection and filtering" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="{{ '/images/paper_collection.png' | relative_url }}" alt="Overview of the process of paper collection and filtering" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   <p><em>Fig. 1. Overview of the paper collection and filtering process.</em></p>
 </div>
 
 <br>
 
 <div align="center">
-  <img src="images/lifecycle.png" alt="Lifecycle of Detection and Governance" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="{{ '/images/lifecycle.png' | relative_url }}" alt="Lifecycle of Detection and Governance" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   <p><em>Fig. 2. Conceptual Framework of Quality Issues and Mitigation in the LLM Lifecycle.</em></p>
 </div>
 

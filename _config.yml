@@ -4,7 +4,13 @@ remote_theme: just-the-docs/just-the-docs
 
 # Site settings
 url: "https://kaifeng-he.github.io"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/From-Data-to-Code"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Search settings
 search_enabled: true

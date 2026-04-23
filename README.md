@@ -1,7 +1,7 @@
 # Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code
 
 <div align="center">
-  <h3>🚀 <a href="https://kaifeng-he.github.io/">View the Academic Website</a></h3>
+  <h3>🚀 <a href="https://kaifeng-he.github.io/From-Data-to-Code/">View the Academic Website</a></h3>
 </div>
 
 <br>
