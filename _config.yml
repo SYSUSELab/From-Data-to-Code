@@ -1,0 +1,27 @@
+title: "Bridging Generation and Training"
+description: "A Systematic Review of Quality Issues in LLMs for Code"
+remote_theme: just-the-docs/just-the-docs
+
+# URL settings
+url: "https://kaifeng-he.github.io"
+baseurl: "/From-Data-to-Code"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Navigation structure
+nav_enabled: true
+enable_copy_button: true
+search_enabled: true
+
+# Taxonomy settings
+aux_links:
+  "GitHub Repository":
+    - "https://github.com/kaifeng-he/From-Data-to-Code"
+
+heading_anchors: true
+
+# Use the images folder
+include: ["images"]
