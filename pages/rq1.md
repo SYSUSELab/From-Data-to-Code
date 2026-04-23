@@ -26,86 +26,586 @@ We discard vague concepts like generic "code hallucination" and establish a unif
 
 ## 📄 Papers Referenced
 
-1. LLMs Meet Library Evolution [2024-06] [[paper](https://arxiv.org/abs/2406.09834)]
-2. Copilot Security [2022-04] [[paper](https://arxiv.org/abs/2204.04741)]
-3. Copilot Evaluation [2025-01] [[paper](https://doi.org/10.1145/3524842.3528470)]
-4. HalluCode [2024-04] [[paper](https://arxiv.org/abs/2404.00971)]
-5. CodeHalu [2024-05] [[paper](https://arxiv.org/abs/2405.00253)]
-6. EffiBench [2024-02] [[paper](https://arxiv.org/abs/2402.02037)]
-7. Mercury [2024-02] [[paper](https://arxiv.org/abs/2402.07844)]
-8. SStuBs [2023-03] [[paper](https://arxiv.org/abs/2303.11455)]
-9. package hallucinations [2024-06] [[paper](https://arxiv.org/abs/2406.10279)]
-10. HallTrigger [2024-07] [[paper](https://arxiv.org/abs/2407.04831)]
-11. Large Language Models for Code [2023-02] [[paper](https://arxiv.org/abs/2302.05319)]
-12. Purple Llama CYBERSECEVAL [2023-12] [[paper](https://arxiv.org/abs/2312.04724)]
-13. Lost at C [2022-08] [[paper](https://arxiv.org/abs/2208.09727)]
-14. AI Assistants Security [2022-11] [[paper](https://arxiv.org/abs/2211.03622)]
-15. The Counterfeit Conundrum [2024-02] [[paper](https://arxiv.org/abs/2402.19475)]
-16. Bugs in LLM-generated Code [2024-03] [[paper](https://arxiv.org/abs/2403.08937)]
-17. GitHub Copilot, Amazon CodeWhisperer, ChatGPT [2023-04] [[paper](https://arxiv.org/abs/2304.10778)]
-18. ChatGPT Code Quality [2023-08] [[paper](https://arxiv.org/abs/2308.04838)]
-19. CloudAPIBench [2024-07] [[paper](https://arxiv.org/abs/2407.09726)]
-20. CodeMirage [2024-08] [[paper](https://arxiv.org/abs/2408.08333)]
-21. LLM-generated Code Efficiency [2024-04] [[paper](https://arxiv.org/abs/2404.06041)]
-22. AutoAPIEval [2024-09] [[paper](https://arxiv.org/abs/2409.15228)]
-23. DeSec [2024-10] [[paper](https://arxiv.org/abs/2410.08858)]
-24. When Fine-Tuning LLMs Meets Data Privacy [2024-12] [[paper](https://arxiv.org/abs/2412.01072)]
-25. Bias Unveiled [2024-11] [[paper](https://arxiv.org/abs/2411.10351)]
-26. FairCoder [2025-01] [[paper](https://arxiv.org/abs/2501.05396)]
-27. CodeIP [2024-04] [[paper](https://arxiv.org/abs/2404.15639)]
-28. From Effectiveness to Efficiency [2024-06] [[paper](https://arxiv.org/abs/2406.00602)]
-29. ENAMEL [2024-06] [[paper](https://arxiv.org/abs/2406.06647)]
-30. DeVAIC [2024-04] [[paper](https://arxiv.org/abs/2404.07548)]
-31. PTMs [2024-11] [[paper](https://arxiv.org/abs/2411.10565)]
-32. Software Librarian [2024-08] [[paper](https://arxiv.org/abs/2408.05128)]
-33. Codequal Analyzer [2025-06] [[paper](https://arxiv.org/abs/2506.02211)]
-34. Artificial-Intelligence Generated Code Considered Harmful [2024-09] [[paper](https://arxiv.org/abs/2409.19182)]
-35. Unveiling Inefficiencies in LLM-Generated Code [2025-03] [[paper](https://arxiv.org/abs/2503.06327)]
-36. Python Tests Quality [2025-06] [[paper](https://arxiv.org/abs/2506.14297)]
-37. CoQuIR [2025-06] [[paper](https://arxiv.org/abs/2506.11066)]
-38. REAL [2025-05] [[paper](https://arxiv.org/abs/2505.22704)]
-39. CIDRe [2025-05] [[paper](https://arxiv.org/abs/2505.19757)]
-40. Infinite-Instruct [2025-05] [[paper](https://arxiv.org/abs/2505.23177)]
-41. Quality In, Quality Out [2025-03] [[paper](https://arxiv.org/abs/2503.11402)]
-42. Security and Quality in LLM-Generated Code [2025-02] [[paper](https://arxiv.org/abs/2502.01853)]
-43. SwallowCode [2025-05] [[paper](https://arxiv.org/abs/2505.02881)]
-44. ROSE [2025-07] [[paper](https://arxiv.org/abs/2507.12561)]
-45. Refining ChatGPT-Generated Code [2023-07] [[paper](https://arxiv.org/abs/2307.12596)]
-46. ReCode [2025-06] [[paper](https://arxiv.org/abs/2506.20495)]
-47. Seed-Coder [2025-06] [[paper](https://arxiv.org/abs/2506.03524)]
-48. Data-efficient Fine-tuning [2025-04] [[paper](https://arxiv.org/abs/2504.12687)]
-49. CRPE [2025-05] [[paper](https://arxiv.org/abs/2505.10594)]
-50. DeepSeek-Coder [2024-01] [[paper](https://arxiv.org/abs/2401.14196)]
-51. CodeSmellEval [2024-12] [[paper](https://arxiv.org/abs/2412.18989)]
-52. RPG [2025-05] [[paper](https://arxiv.org/abs/2505.10402)]
-53. Repetition In Repetition Out [2023-10] [[paper](https://arxiv.org/abs/2310.10226)]
-54. Beyond Correctness [2024-07] [[paper](https://arxiv.org/abs/2407.11470)]
-55. Generated Code Diversity [2024-08] [[paper](https://arxiv.org/abs/2408.14504)]
-56. CodeMI [2024-04] [[paper](https://arxiv.org/abs/2404.14296)]
-57. CodeCipher [2024-10] [[paper](https://arxiv.org/abs/2410.05797)]
-58. Code Llama [2023-08] [[paper](https://arxiv.org/abs/2308.12950)]
-59. Codex [2021-07] [[paper](https://arxiv.org/abs/2107.03374)]
-60. Path Planning Evaluation [2025-04] [[paper](https://arxiv.org/abs/2504.21276)]
-61. CODEJUDGE [2024-01] [[paper](https://aclanthology.org/2024.emnlp-main.1118.pdf?utm_source=chatgpt.com)]
-62. Synthetic Data Generation [2025-01] [[paper](https://ieeexplore.ieee.org/document/11080380)]
-63. Unseen Horizons [2025-04] [[paper](https://ieeexplore.ieee.org/document/11029836)]
-64. Code Generation Survey [2024-08] [[paper](https://dl.acm.org/doi/10.1145/3747588)]
-65. DataRecipe [2024-10] [[paper](https://dl.acm.org/doi/10.1145/3691620.3695593)]
-66. aiXcoder-7B [2025-04] [[paper](https://ieeexplore.ieee.org/document/11121702)]
-67. Imperfect Code Generation [2024-05] [[paper](https://ieeexplore.ieee.org/document/10554837)]
-68. ClassEval [2024-6] [[paper](https://ieeexplore.ieee.org/document/10549472)]
-69. UCD-Training [2026-02] [[paper](https://arxiv.org/abs/2602.20799)]
-70. DRAINCODE [2026-01] [[paper](https://arxiv.org/abs/2601.20615)]
-71. RealSec-Bench [2026-01] [[paper](https://arxiv.org/abs/2601.22706)]
-72. ShortCoder [2026-01] [[paper](https://arxiv.org/abs/2601.09703)]
-73. APIKG4SYN [2025-11] [[paper](https://arxiv.org/abs/2512.00380)]
-74. MultiCodeIF [2025-07] [[paper](https://arxiv.org/abs/2507.00699)]
-75. Beyond Functional Correctness [2024-06] [[paper](https://arxiv.org/abs/2407.00456)]
-76. Adadec [2025-06] [[paper](https://arxiv.org/html/2506.08980v1)]
-77. Code Copycat Conundrum [2025-04] [[paper](https://arxiv.org/abs/2504.12608)]
-78. AllianceCoder [2025-03] [[paper](https://arxiv.org/abs/2503.20589)]
-79. RustEvo^ 2 [2025-03] [[paper](https://arxiv.org/abs/2503.16922)]
-80. RobGen [2025-03] [[paper](https://arxiv.org/abs/2503.20197)]
-81. Llm Hallucinations in Practical Code Generation [2024-09] [[paper](https://arxiv.org/abs/2409.20550)]
-82. COFFE [2025-02] [[paper](https://arxiv.org/abs/2502.02827)]
-83. AATK Benchmark [2021-08] [[paper](https://dl.acm.org/doi/10.1145/3610721)]
+<div class="paper-list">
+  <div class="paper-card">
+    <span class="paper-title">LLMs Meet Library Evolution</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2406.09834" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Copilot Security</span>
+    <div class="paper-meta">
+      <span class="paper-year">2022-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2204.04741" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Copilot Evaluation</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-01</span>
+      <a class="paper-link" href="https://doi.org/10.1145/3524842.3528470" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">HalluCode</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2404.00971" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CodeHalu</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-05</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2405.00253" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">EffiBench</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-02</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2402.02037" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Mercury</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-02</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2402.07844" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">SStuBs</span>
+    <div class="paper-meta">
+      <span class="paper-year">2023-03</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2303.11455" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">package hallucinations</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2406.10279" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">HallTrigger</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-07</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2407.04831" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Large Language Models for Code</span>
+    <div class="paper-meta">
+      <span class="paper-year">2023-02</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2302.05319" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Purple Llama CYBERSECEVAL</span>
+    <div class="paper-meta">
+      <span class="paper-year">2023-12</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2312.04724" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Lost at C</span>
+    <div class="paper-meta">
+      <span class="paper-year">2022-08</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2208.09727" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">AI Assistants Security</span>
+    <div class="paper-meta">
+      <span class="paper-year">2022-11</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2211.03622" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">The Counterfeit Conundrum</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-02</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2402.19475" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Bugs in LLM-generated Code</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-03</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2403.08937" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">GitHub Copilot, Amazon CodeWhisperer, ChatGPT</span>
+    <div class="paper-meta">
+      <span class="paper-year">2023-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2304.10778" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">ChatGPT Code Quality</span>
+    <div class="paper-meta">
+      <span class="paper-year">2023-08</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2308.04838" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CloudAPIBench</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-07</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2407.09726" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CodeMirage</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-08</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2408.08333" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">LLM-generated Code Efficiency</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2404.06041" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">AutoAPIEval</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-09</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2409.15228" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">DeSec</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-10</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2410.08858" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">When Fine-Tuning LLMs Meets Data Privacy</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-12</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2412.01072" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Bias Unveiled</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-11</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2411.10351" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">FairCoder</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-01</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2501.05396" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CodeIP</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2404.15639" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">From Effectiveness to Efficiency</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2406.00602" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">ENAMEL</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2406.06647" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">DeVAIC</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2404.07548" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">PTMs</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-11</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2411.10565" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Software Librarian</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-08</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2408.05128" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Codequal Analyzer</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2506.02211" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Artificial-Intelligence Generated Code Considered Harmful</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-09</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2409.19182" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Unveiling Inefficiencies in LLM-Generated Code</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-03</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2503.06327" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Python Tests Quality</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2506.14297" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CoQuIR</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2506.11066" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">REAL</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-05</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2505.22704" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CIDRe</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-05</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2505.19757" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Infinite-Instruct</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-05</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2505.23177" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Quality In, Quality Out</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-03</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2503.11402" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Security and Quality in LLM-Generated Code</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-02</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2502.01853" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">SwallowCode</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-05</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2505.02881" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">ROSE</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-07</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2507.12561" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Refining ChatGPT-Generated Code</span>
+    <div class="paper-meta">
+      <span class="paper-year">2023-07</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2307.12596" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">ReCode</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2506.20495" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Seed-Coder</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2506.03524" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Data-efficient Fine-tuning</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2504.12687" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CRPE</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-05</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2505.10594" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">DeepSeek-Coder</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-01</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2401.14196" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CodeSmellEval</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-12</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2412.18989" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">RPG</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-05</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2505.10402" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Repetition In Repetition Out</span>
+    <div class="paper-meta">
+      <span class="paper-year">2023-10</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2310.10226" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Beyond Correctness</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-07</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2407.11470" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Generated Code Diversity</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-08</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2408.14504" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CodeMI</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2404.14296" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CodeCipher</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-10</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2410.05797" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Code Llama</span>
+    <div class="paper-meta">
+      <span class="paper-year">2023-08</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2308.12950" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Codex</span>
+    <div class="paper-meta">
+      <span class="paper-year">2021-07</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2107.03374" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Path Planning Evaluation</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2504.21276" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">CODEJUDGE</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-01</span>
+      <a class="paper-link" href="https://aclanthology.org/2024.emnlp-main.1118.pdf?utm_source=chatgpt.com" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Synthetic Data Generation</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-01</span>
+      <a class="paper-link" href="https://ieeexplore.ieee.org/document/11080380" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Unseen Horizons</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-04</span>
+      <a class="paper-link" href="https://ieeexplore.ieee.org/document/11029836" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Code Generation Survey</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-08</span>
+      <a class="paper-link" href="https://dl.acm.org/doi/10.1145/3747588" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">DataRecipe</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-10</span>
+      <a class="paper-link" href="https://dl.acm.org/doi/10.1145/3691620.3695593" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">aiXcoder-7B</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-04</span>
+      <a class="paper-link" href="https://ieeexplore.ieee.org/document/11121702" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Imperfect Code Generation</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-05</span>
+      <a class="paper-link" href="https://ieeexplore.ieee.org/document/10554837" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">ClassEval</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-6</span>
+      <a class="paper-link" href="https://ieeexplore.ieee.org/document/10549472" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">UCD-Training</span>
+    <div class="paper-meta">
+      <span class="paper-year">2026-02</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2602.20799" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">DRAINCODE</span>
+    <div class="paper-meta">
+      <span class="paper-year">2026-01</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2601.20615" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">RealSec-Bench</span>
+    <div class="paper-meta">
+      <span class="paper-year">2026-01</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2601.22706" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">ShortCoder</span>
+    <div class="paper-meta">
+      <span class="paper-year">2026-01</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2601.09703" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">APIKG4SYN</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-11</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2512.00380" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">MultiCodeIF</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-07</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2507.00699" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Beyond Functional Correctness</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-06</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2407.00456" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Adadec</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-06</span>
+      <a class="paper-link" href="https://arxiv.org/html/2506.08980v1" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Code Copycat Conundrum</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-04</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2504.12608" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">AllianceCoder</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-03</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2503.20589" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">RustEvo^ 2</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-03</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2503.16922" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">RobGen</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-03</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2503.20197" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">Llm Hallucinations in Practical Code Generation</span>
+    <div class="paper-meta">
+      <span class="paper-year">2024-09</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2409.20550" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">COFFE</span>
+    <div class="paper-meta">
+      <span class="paper-year">2025-02</span>
+      <a class="paper-link" href="https://arxiv.org/abs/2502.02827" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+  <div class="paper-card">
+    <span class="paper-title">AATK Benchmark</span>
+    <div class="paper-meta">
+      <span class="paper-year">2021-08</span>
+      <a class="paper-link" href="https://dl.acm.org/doi/10.1145/3610721" target="_blank">📄 View Paper</a>
+    </div>
+  </div>
+</div>
