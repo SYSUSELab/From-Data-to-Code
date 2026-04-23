@@ -13,7 +13,7 @@ permalink: /
 </div>
 
 <div class="img-container">
-  <img src="{{ site.baseurl }}/{{ site.baseurl }}/images/lifecycle.png" alt="Lifecycle of Detection and Governance" width="80%">
+  <img src="{{ site.baseurl }}/images/lifecycle.png" alt="Lifecycle of Detection and Governance" width="80%">
   <p><em>Fig. 1. Conceptual Framework of Quality Issues and Mitigation in the LLM Lifecycle.</em></p>
 </div>
 
