@@ -25,10 +25,10 @@ sass:
   style: compressed
 aux_links:
   "GitHub Repository":
-    - "https://github.com/kaifeng-he/From-Data-to-Code"
+    - "https://github.com/SYSUSELab/From-Data-to-Code"
 
 # Heading anchor links
 heading_anchors: true
 
 # Footer content
-footer_content: "© 2026 From-Data-to-Code Team. Systematic Review on LLM Code Quality."
+footer_content: "© 2026 SYSUSELab. Systematic Review on LLM Code Quality."
