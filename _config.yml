@@ -3,7 +3,7 @@ description: "Quality Issues in LLMs for Code: A Systematic Review"
 remote_theme: just-the-docs/just-the-docs
 
 # Site settings
-url: "https://kaifeng-he.github.io"
+url: "https://SYSUSELab.github.io"
 baseurl: "/From-Data-to-Code" # Repository name
 
 # Plugins
