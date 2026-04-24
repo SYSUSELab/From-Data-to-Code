@@ -72,3 +72,10 @@ We warmly welcome contributions from the community! If you have new research or 
 1. Fork this repository.
 2. Add your paper to the corresponding RQ section.
 3. Submit a Pull Request.
+
+---
+
+<div style="text-align: right; font-size: 0.8em; color: var(--text-muted); margin-top: 50px;">
+  Contributor: <a href="https://kaifeng-he.github.io" target="_blank">Kaifeng He</a>
+</div>
+
