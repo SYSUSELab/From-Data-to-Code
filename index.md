@@ -11,7 +11,7 @@ permalink: /
 ## A Systematic Review of Quality Issues in LLMs for Code
 
 <div style="margin: 20px 0;">
-  <a href="{{ '/paper.pdf' | relative_url }}" class="btn btn-primary">📄 View Paper</a>
+  <a href="{{ '/paper/From-Data-to-Code.pdf' | relative_url }}" class="btn btn-primary">📄 View Paper</a>
   <a href="https://github.com/SYSUSELab/From-Data-to-Code" class="btn btn-outline">💻 GitHub Repo</a>
 </div>
 
