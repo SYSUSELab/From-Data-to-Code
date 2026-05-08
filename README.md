@@ -23,6 +23,7 @@ Large language models (LLMs) frequently generate defective outputs in code gener
 
 ## 📢 News
 
+- **[2026-05]** 📝 Our paper is now available on [arXiv](https://arxiv.org/abs/2605.05267)!
 - **[2026-04]** 🚀 Official documentation website is now live: [From-Data-to-Code Website](https://SYSUSELab.github.io/From-Data-to-Code)
 - **[2026-04]** 🚀 The `From-Data-to-Code` repository is officially launched.
 
