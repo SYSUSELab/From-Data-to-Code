@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Detection Methods
+description: "Detection methods for quality issues in LLM-generated code and training data, including static analysis, dynamic analysis, model-based detection, and data-level quality assessment."
 nav_order: 4
 ---
 
@@ -19,7 +20,7 @@ Identifies defects in generated code using three main paradigms:
 - **Model-based Detection**: "LLM-as-a-judge" techniques and ML classifiers for semantic filtering.
 
 <div align="center">
-  <img src="images/generated_code_issues_detection.png" alt="Taxonomy of Code Issue Detection Methods" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  <img src="{{ '/images/generated_code_issues_detection.png' | relative_url }}" alt="Taxonomy of Code Issue Detection Methods" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
   <p><em>Fig. 6. Taxonomy of Code Issue Detection Techniques</em></p>
 </div>
 
@@ -34,7 +35,7 @@ Targets the integrity, provenance, and representativeness of training data:
 - **Model-based Detection**: Semantic screening using LLMs to evaluate readability and hazards.
 
 <div align="center">
-  <img src="images/data_quality_issues_detection.png" alt="Taxonomy of Dataset Issue Detection Methods" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  <img src="{{ '/images/data_quality_issues_detection.png' | relative_url }}" alt="Taxonomy of Dataset Issue Detection Methods" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
   <p><em>Fig. 7. Taxonomy of Training Data Issue Detection Techniques</em></p>
 </div>
 

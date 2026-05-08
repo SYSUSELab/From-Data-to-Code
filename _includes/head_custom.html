@@ -1,4 +1,33 @@
 <meta name="google-site-verification" content="google5509a39cd4b75c33" />
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code",
+  "headline": "Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code",
+  "alternateName": "From Data to Code",
+  "description": "A systematic literature review of training data quality issues and generated code quality issues in large language models for code.",
+  "url": "{{ '/' | absolute_url }}",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.05267",
+    "https://github.com/SYSUSELab/From-Data-to-Code"
+  ],
+  "datePublished": "2026-05",
+  "publisher": {
+    "@type": "Organization",
+    "name": "SYSUSELab"
+  },
+  "about": [
+    "Large language models for code",
+    "Code generation",
+    "Training data quality",
+    "Generated code quality",
+    "Systematic literature review"
+  ]
+}
+</script>
+{% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Governance Strategies
+description: "Governance and mitigation strategies for training data quality issues and generated code defects in large language models for code."
 nav_order: 5
 ---
 
@@ -19,7 +20,7 @@ We synthesize a **Multi-layered Governance Framework** spanning the data lifecyc
   - _Post-generation_: Automated AST-level repairs and sandbox execution filtering.
 
 <div align="center">
-  <img src="images/generated_code_issues_detection.png" alt="Taxonomy of Code Issue Mitigation Strategies" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  <img src="{{ '/images/generated_code_issues_detection.png' | relative_url }}" alt="Taxonomy of Code Issue Mitigation Strategies" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
   <p><em>Fig. 8. Taxonomy of Code Issue Mitigation Strategies</em></p>
 </div>
 
@@ -33,7 +34,7 @@ We synthesize a **Multi-layered Governance Framework** spanning the data lifecyc
 - **Data Augmentation**: High-quality synthetic generation and integration of curated OS repos.
 
 <div align="center">
-  <img src="images/data_quality_issues_mitigation.png" alt="Taxonomy of Dataset Issue Mitigation Strategies" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  <img src="{{ '/images/data_quality_issues_mitigation.png' | relative_url }}" alt="Taxonomy of Dataset Issue Mitigation Strategies" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
   <p><em>Fig. 9. Taxonomy of Training Data Issue Mitigation Strategies</em></p>
 </div>
 

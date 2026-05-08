@@ -1,22 +1,23 @@
 ---
 layout: default
-title: Overview
+title: "From Data to Code: A Systematic Review of Quality Issues in LLMs for Code"
 nav_order: 1
-description: "Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code"
+description: "Project website for Bridging Generation and Training, a systematic literature review of training data quality issues, generated code quality issues, detection methods, and governance strategies for large language models for code."
 permalink: /
 ---
 
-# 📖 Bridging Generation and Training
+# 📖 From Data to Code
 
-## A Systematic Review of Quality Issues in LLMs for Code
+## Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code
 
 <div style="margin: 20px 0;">
   <a href="https://arxiv.org/abs/2605.05267" class="btn btn-primary">📄 View Paper</a>
   <a href="https://github.com/SYSUSELab/From-Data-to-Code" class="btn btn-outline">💻 GitHub Repo</a>
 </div>
 
-Large language models (LLMs) frequently generate defective outputs in code generation tasks, ranging from logical bugs to security vulnerabilities.
- While these generation failures are often treated as model-level limitations, empirical evidence increasingly traces their root causes to imperfections within the training corpora.
+From Data to Code is the project website for **Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code**. This systematic literature review studies how training data quality issues in large language models for code propagate into generated code quality issues, including correctness bugs, security vulnerabilities, compliance risks, robustness failures, maintainability problems, and efficiency defects.
+
+The review connects data defects, code generation failures, detection methods, and governance strategies across the LLM lifecycle. It provides a taxonomy of quality issues in LLM-generated code, a taxonomy of training data quality issues, and a mapping from data problems to code defects.
 
 ---
 
@@ -45,9 +46,9 @@ Large language models (LLMs) frequently generate defective outputs in code gener
 ## 📖 Abstract
 
 <div class="abstract-box">
-This paper presents a systematic literature review of 114 primary studies to investigate how training data quality issues propagate into code generation. We establish a unified taxonomy that categorizes generated code quality issues across nine dimensions and training data quality issues into code and non-code attributes. 
+This paper presents a systematic literature review of 114 primary studies to investigate how training data quality issues propagate into code generation. We establish a unified taxonomy that categorizes generated code quality issues across nine dimensions and training data quality issues into code and non-code attributes.
 
-Based on this taxonomy, we formalize a causal framework detailing 18 typical propagation mapping mechanisms. Furthermore, we synthesize state-of-the-art detection and mitigation techniques across the data, model, and generation lifecycles. 
+Based on this taxonomy, we formalize a causal framework detailing 18 typical propagation mapping mechanisms. Furthermore, we synthesize state-of-the-art detection and mitigation techniques across the data, model, and generation lifecycles.
 </div>
 
 ---
@@ -89,4 +90,3 @@ We warmly welcome contributions from the community! If you have new research or 
     </a>
   </div>
 </div>
-
