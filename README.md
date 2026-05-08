@@ -2,7 +2,7 @@
 
 <p align="center">
   🌐 <a href="https://SYSUSELab.github.io/From-Data-to-Code"><strong>Documentation Website</strong></a> |
-  📄 <a href="paper/From-Data-to-Code.pdf"><strong>Full Paper</strong></a>
+  📄 <a href="https://arxiv.org/abs/2605.05267"><strong>arXiv</strong></a>
 </p>
 
 ## 📖 Abstract
