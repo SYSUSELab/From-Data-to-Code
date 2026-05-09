@@ -25,7 +25,7 @@ permalink: /
     <div style="font-size: 0.8rem; color: var(--text-muted);">Primary Studies Reviewed</div>
   </div>
   <div class="paper-card" style="margin-bottom: 0; text-align: center;">
-    <div style="font-size: 2rem; font-weight: 800; color: #3fb950;">9</div>
+    <div style="font-size: 2rem; font-weight: 800; color: var(--accent-green);">9</div>
     <div style="font-size: 0.8rem; color: var(--text-muted);">Quality Dimensions</div>
   </div>
   <div class="paper-card" style="margin-bottom: 0; text-align: center;">
