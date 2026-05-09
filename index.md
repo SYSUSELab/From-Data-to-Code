@@ -15,6 +15,10 @@ permalink: /
   <a href="https://github.com/SYSUSELab/From-Data-to-Code" class="btn btn-outline">💻 GitHub Repo</a>
 </div>
 
+<div align="center" style="margin: 24px 0 28px;">
+  <img src="{{ '/images/from-data-to-code-hero.png' | relative_url }}" alt="From Data to Code project overview" width="100%" style="max-width: 980px; border-radius: 10px; box-shadow: 0 10px 28px rgba(0,0,0,0.28);">
+</div>
+
 From Data to Code is the project website for **Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code**. This systematic literature review studies how training data quality issues in large language models for code propagate into generated code quality issues, including correctness bugs, security vulnerabilities, compliance risks, robustness failures, maintainability problems, and efficiency defects.
 
 The review connects data defects, code generation failures, detection methods, and governance strategies across the LLM lifecycle. It provides a taxonomy of quality issues in LLM-generated code, a taxonomy of training data quality issues, and a mapping from data problems to code defects.

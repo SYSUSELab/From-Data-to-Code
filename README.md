@@ -1,9 +1,37 @@
-# Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code
+<a id="from-data-to-code"></a>
+
+<h1 align="center">From Data to Code</h1>
+
+<p align="center">
+  <strong>Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code</strong>
+</p>
+
+<p align="center">
+  A research resource on how training data quality issues propagate into LLM-generated code quality issues, and how they can be detected, mapped, and governed across the LLM lifecycle.
+</p>
 
 <p align="center">
   🌐 <a href="https://SYSUSELab.github.io/From-Data-to-Code"><strong>Documentation Website</strong></a> |
   📄 <a href="https://arxiv.org/abs/2605.05267"><strong>arXiv</strong></a>
 </p>
+
+<p align="center">
+  <strong>114</strong> primary studies reviewed ·
+  <strong>9</strong> generated-code quality dimensions ·
+  <strong>18</strong> propagation mapping mechanisms
+</p>
+
+<div align="center">
+  <img src="images/from-data-to-code-hero.png" alt="From Data to Code project overview" width="92%">
+</div>
+
+---
+
+## Overview
+
+Modern code LLMs do not fail only at generation time. Their defects often reflect upstream problems in the data they were trained or fine-tuned on: vulnerable snippets, noisy text, duplicated samples, distribution gaps, privacy leakage, benchmark contamination, and other forms of low-quality training signal.
+
+This repository accompanies the systematic literature review **“Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code.”** It organizes the reviewed evidence into taxonomies, propagation mappings, detection methods, and governance strategies for understanding the path from flawed data to flawed generated code.
 
 ## 📖 Abstract
 
@@ -31,7 +59,8 @@ Large language models (LLMs) frequently generate defective outputs in code gener
 
 ## 📑 Table of Contents
 
-- [Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code](#bridging-generation-and-training-a-systematic-review-of-quality-issues-in-llms-for-code)
+- [From Data to Code](#from-data-to-code)
+  - [Overview](#overview)
   - [📖 Abstract](#-abstract)
   - [📢 News](#-news)
   - [📑 Table of Contents](#-table-of-contents)
