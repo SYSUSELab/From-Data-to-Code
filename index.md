@@ -19,19 +19,6 @@ permalink: /
   <img src="{{ '/images/from-data-to-code-hero.png' | relative_url }}" alt="From Data to Code project overview" width="100%" style="max-width: 980px; border-radius: 10px; box-shadow: 0 10px 28px rgba(0,0,0,0.28);">
 </div>
 
-From Data to Code is the project website for **Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code**. This systematic literature review studies how training data quality issues in large language models for code propagate into generated code quality issues, including correctness bugs, security vulnerabilities, compliance risks, robustness failures, maintainability problems, and efficiency defects.
-
-The review connects data defects, code generation failures, detection methods, and governance strategies across the LLM lifecycle. It provides a taxonomy of quality issues in LLM-generated code, a taxonomy of training data quality issues, and a mapping from data problems to code defects.
-
----
-
-## 📢 News
-
-- **[2026-05]** 📝 Our paper is now available on [arXiv](https://arxiv.org/abs/2605.05267)!
-- **[2026-04]** 🚀 The `From-Data-to-Code` repository is officially launched.
-
----
-
 <div class="stats-bento">
   <div class="paper-card" style="margin-bottom: 0; text-align: center;">
     <div style="font-size: 2rem; font-weight: 800; color: var(--accent-blue);">114</div>
@@ -46,6 +33,19 @@ The review connects data defects, code generation failures, detection methods, a
     <div style="font-size: 0.8rem; color: var(--text-muted);">Propagation Mechanisms</div>
   </div>
 </div>
+
+From Data to Code is the project website for **Bridging Generation and Training: A Systematic Review of Quality Issues in LLMs for Code**. This systematic literature review studies how training data quality issues in large language models for code propagate into generated code quality issues, including correctness bugs, security vulnerabilities, compliance risks, robustness failures, maintainability problems, and efficiency defects.
+
+The review connects data defects, code generation failures, detection methods, and governance strategies across the LLM lifecycle. It provides a taxonomy of quality issues in LLM-generated code, a taxonomy of training data quality issues, and a mapping from data problems to code defects.
+
+---
+
+## 📢 News
+
+- **[2026-05]** 📝 Our paper is now available on [arXiv](https://arxiv.org/abs/2605.05267)!
+- **[2026-04]** 🚀 The `From-Data-to-Code` repository is officially launched.
+
+---
 
 ## 📖 Abstract
 
