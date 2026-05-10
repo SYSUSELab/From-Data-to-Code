@@ -30,9 +30,11 @@ We categorize quality issues in LLM-generated code into **9 core dimensions**:
 
 <br>
 
-<div align="center">
-  <img src="{{ '/images/generated_code_issues.png' | relative_url }}" alt="Taxonomy of Generated Code Quality Issues" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-  <p><em>Fig. 3. Taxonomy of Generated Code Quality Issues</em></p>
+<div class="figure-block">
+  <div class="figure-frame">
+    <img src="{{ '/images/generated_code_issues.png' | relative_url }}" alt="Taxonomy of Generated Code Quality Issues" width="1100" loading="lazy" decoding="async">
+  </div>
+  <p class="figure-caption"><em>Fig. 3. Taxonomy of Generated Code Quality Issues</em></p>
 </div>
 
 
@@ -805,9 +807,11 @@ Non-code textual noise and macro-level dataset flaws:
 
 <br>
 
-<div align="center">
-  <img src="{{ '/images/data_quality_issues.png' | relative_url }}" alt="Taxonomy of Dataset Quality Issues" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-  <p><em>Fig. 4. Taxonomy of Training Data Quality Issues</em></p>
+<div class="figure-block">
+  <div class="figure-frame">
+    <img src="{{ '/images/data_quality_issues.png' | relative_url }}" alt="Taxonomy of Dataset Quality Issues" width="1100" loading="lazy" decoding="async">
+  </div>
+  <p class="figure-caption"><em>Fig. 4. Taxonomy of Training Data Quality Issues</em></p>
 </div>
 
 ### 📄 Referenced Papers

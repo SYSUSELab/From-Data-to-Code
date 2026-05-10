@@ -25,9 +25,11 @@ We identify two primary types of propagation:
 
 ## Visualizing the Propagation
 
-<div align="center">
-  <img src="{{ '/images/sankey.png' | relative_url }}" alt="Sankey Diagram of Mapping from Data Issues to Code Issues" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-  <p><em>Fig. 5. Mapping mechanisms from Training Data Issues to Generated Code Issues.</em></p>
+<div class="figure-block">
+  <div class="figure-frame">
+    <img src="{{ '/images/sankey.png' | relative_url }}" alt="Sankey Diagram of Mapping from Data Issues to Code Issues" width="1100" loading="lazy" decoding="async">
+  </div>
+  <p class="figure-caption"><em>Fig. 5. Mapping mechanisms from Training Data Issues to Generated Code Issues.</em></p>
 </div>
 
 

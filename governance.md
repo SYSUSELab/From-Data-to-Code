@@ -19,9 +19,11 @@ We synthesize a **Multi-layered Governance Framework** spanning the data lifecyc
   - _In-generation_: Adaptive decoding constraints and Iterative Self-reflection.
   - _Post-generation_: Automated AST-level repairs and sandbox execution filtering.
 
-<div align="center">
-  <img src="{{ '/images/generated_code_issues_detection.png' | relative_url }}" alt="Taxonomy of Code Issue Mitigation Strategies" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-  <p><em>Fig. 8. Taxonomy of Code Issue Mitigation Strategies</em></p>
+<div class="figure-block">
+  <div class="figure-frame">
+    <img src="{{ '/images/generated_code_issues_mitigation.png' | relative_url }}" alt="Taxonomy of Code Issue Mitigation Strategies" width="1100" loading="lazy" decoding="async">
+  </div>
+  <p class="figure-caption"><em>Fig. 8. Taxonomy of Code Issue Mitigation Strategies</em></p>
 </div>
 
 ---
@@ -33,9 +35,11 @@ We synthesize a **Multi-layered Governance Framework** spanning the data lifecyc
 - **Data Enhancement**: Refactoring, adding docstrings, and standardizing low-quality code.
 - **Data Augmentation**: High-quality synthetic generation and integration of curated OS repos.
 
-<div align="center">
-  <img src="{{ '/images/data_quality_issues_mitigation.png' | relative_url }}" alt="Taxonomy of Dataset Issue Mitigation Strategies" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-  <p><em>Fig. 9. Taxonomy of Training Data Issue Mitigation Strategies</em></p>
+<div class="figure-block">
+  <div class="figure-frame">
+    <img src="{{ '/images/data_quality_issues_mitigation.png' | relative_url }}" alt="Taxonomy of Dataset Issue Mitigation Strategies" width="1100" loading="lazy" decoding="async">
+  </div>
+  <p class="figure-caption"><em>Fig. 9. Taxonomy of Training Data Issue Mitigation Strategies</em></p>
 </div>
 
 
