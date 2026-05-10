@@ -228,11 +228,33 @@ strong {
   border-radius: 8px;
   box-shadow: var(--shadow-card);
   overflow: hidden;
+  position: relative;
 }
 
-.hero-visual img {
+.hero-visual__image {
   display: block;
+  height: auto;
+  transition: opacity 0.12s ease;
   width: 100%;
+}
+
+.hero-visual__image--light {
+  opacity: 0;
+}
+
+.hero-visual__image--dark {
+  inset: 0;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+}
+
+html[data-theme="light"] .hero-visual__image--light {
+  opacity: 1;
+}
+
+html[data-theme="light"] .hero-visual__image--dark {
+  opacity: 0;
 }
 
 .stats-bento {

@@ -18,7 +18,8 @@ permalink: /
     </div>
   </div>
   <div class="hero-visual">
-    <img src="{{ '/images/from-data-to-code-hero.png' | relative_url }}" alt="From Data to Code project overview" width="980" loading="eager" decoding="async">
+    <img class="hero-visual__image hero-visual__image--light" src="{{ '/images/from-data-to-code-hero-light.png' | relative_url }}" alt="From Data to Code project overview" width="980" height="552" loading="eager" decoding="async" fetchpriority="high">
+    <img class="hero-visual__image hero-visual__image--dark" src="{{ '/images/from-data-to-code-hero-dark.png' | relative_url }}" alt="" width="980" height="552" loading="eager" decoding="async" fetchpriority="high" aria-hidden="true">
   </div>
 </section>
 

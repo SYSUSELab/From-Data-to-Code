@@ -22,7 +22,7 @@
 </p>
 
 <div align="center">
-  <img src="images/from-data-to-code-hero.png" alt="From Data to Code project overview" width="92%">
+  <img src="images/from-data-to-code-hero-light.png" alt="From Data to Code project overview" width="92%">
 </div>
 
 ---
