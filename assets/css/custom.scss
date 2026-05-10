@@ -574,20 +574,16 @@ td {
 @media (min-width: 50rem) {
   .side-bar {
     min-width: 200px;
-    width: 200px;
+    width: 15%;
   }
 
   .main,
   .main-content-wrap {
-    margin-left: 200px;
+    margin-left: 8%;
   }
 
   .main-content {
-    margin-left: 0;
-    margin-right: auto;
     max-width: 1100px;
-    padding-left: 1.5rem;
-    padding-right: 2rem;
   }
 }
 
