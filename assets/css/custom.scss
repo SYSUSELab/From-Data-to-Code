@@ -20,7 +20,7 @@
     --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.4);
     --tag-bg: rgba(88, 166, 255, 0.1);
     --abstract-bg: linear-gradient(135deg, rgba(88, 166, 255, 0.05) 0%, rgba(188, 140, 255, 0.05) 100%);
-    --heading-gradient: linear-gradient(120deg, #fff 30%, var(--accent-blue) 90%);
+    --heading-color: #f0f6fc;
     --button-primary-bg: #238636;
     --button-primary-border: #2ea043;
     --button-primary-text: #ffffff;
@@ -47,7 +47,7 @@ html[data-theme="light"] {
     --shadow-card: 0 8px 24px rgba(140, 149, 159, 0.2);
     --tag-bg: rgba(9, 105, 218, 0.1);
     --abstract-bg: linear-gradient(135deg, rgba(9, 105, 218, 0.08) 0%, rgba(130, 80, 223, 0.08) 100%);
-    --heading-gradient: none;
+    --heading-color: #0f172a;
     --button-primary-bg: #0969da;
     --button-primary-border: #0969da;
     --button-primary-text: #ffffff;
@@ -62,14 +62,23 @@ body {
     line-height: 1.6;
 }
 
-/* 标题高级感：渐变 + 字间距 */
+.main-content p code,
+.main-content li code,
+.main-content td code {
+    background-color: var(--bg-code);
+    color: var(--text-strong);
+    border: 1px solid var(--border);
+}
+
+/* 标题 */
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     letter-spacing: 0;
-    background: var(--heading-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: none;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: currentColor;
+    color: var(--heading-color);
     margin-top: 1.5em;
 }
 
@@ -78,8 +87,8 @@ html[data-theme="light"] h2,
 html[data-theme="light"] h3 {
     background: none;
     -webkit-background-clip: border-box;
-    -webkit-text-fill-color: var(--text-strong);
-    color: var(--text-strong);
+    -webkit-text-fill-color: currentColor;
+    color: var(--heading-color);
 }
 
 .btn.btn-primary {

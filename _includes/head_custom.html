@@ -67,7 +67,7 @@
     --tag-bg: rgba(88, 166, 255, 0.15) !important;
     --tag-border: rgba(88, 166, 255, 0.3) !important;
     --abstract-bg: linear-gradient(135deg, rgba(88, 166, 255, 0.08) 0%, rgba(188, 140, 255, 0.08) 100%) !important;
-    --heading-gradient: linear-gradient(120deg, #ffffff 20%, #58a6ff 80%) !important;
+    --heading-color: #f0f6fc !important;
     --button-primary-bg: #238636 !important;
     --button-primary-border: #2ea043 !important;
     --button-primary-text: #ffffff !important;
@@ -95,7 +95,7 @@ html[data-theme="light"] {
     --tag-bg: rgba(9, 105, 218, 0.1) !important;
     --tag-border: rgba(9, 105, 218, 0.22) !important;
     --abstract-bg: linear-gradient(135deg, rgba(9, 105, 218, 0.08) 0%, rgba(130, 80, 223, 0.08) 100%) !important;
-    --heading-gradient: none !important;
+    --heading-color: #0f172a !important;
     --button-primary-bg: #0969da !important;
     --button-primary-border: #0969da !important;
     --button-primary-text: #ffffff !important;
@@ -160,13 +160,14 @@ html[data-theme="light"] .site-title:hover {
     box-shadow: var(--shadow-card) !important;
 }
 
-/* 渐变标题 */
+/* 标题 */
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif !important;
     font-weight: 800 !important;
-    background: var(--heading-gradient) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+    -webkit-text-fill-color: currentColor !important;
+    color: var(--heading-color) !important;
     letter-spacing: 0 !important;
 }
 
@@ -175,8 +176,8 @@ html[data-theme="light"] h2,
 html[data-theme="light"] h3 {
     background: none !important;
     -webkit-background-clip: border-box !important;
-    -webkit-text-fill-color: var(--text-strong) !important;
-    color: var(--text-strong) !important;
+    -webkit-text-fill-color: currentColor !important;
+    color: var(--heading-color) !important;
 }
 
 .btn.btn-primary {
@@ -291,6 +292,14 @@ html[data-theme="light"] h3 {
 /* 修正正文颜色 */
 .main-content, p, li, td {
     color: var(--text-main) !important;
+}
+
+.main-content p code,
+.main-content li code,
+.main-content td code {
+    background-color: var(--bg-code) !important;
+    color: var(--text-strong) !important;
+    border: 1px solid var(--border-color) !important;
 }
 
 .main-content h4,
