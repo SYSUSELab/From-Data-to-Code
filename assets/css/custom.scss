@@ -181,10 +181,16 @@ strong {
 
 .site-hero {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: minmax(0, 0.94fr) minmax(280px, 1.06fr);
-  margin: 0.5rem 0 2.25rem;
-  align-items: center;
+  gap: 1.8rem;
+  grid-template-columns: 1fr;
+  margin: 0.5rem auto 2.4rem;
+  max-width: 1040px;
+  text-align: center;
+}
+
+.site-hero__content {
+  justify-self: center;
+  max-width: 860px;
 }
 
 .site-hero__eyebrow {
@@ -212,10 +218,14 @@ strong {
 .site-hero__summary {
   color: var(--text-main);
   font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.15rem;
+  max-width: 720px;
 }
 
 .hero-actions {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
@@ -227,8 +237,11 @@ strong {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: var(--shadow-card);
+  justify-self: center;
+  max-width: 980px;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .hero-visual__image {
