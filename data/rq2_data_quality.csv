@@ -1,0 +1,166 @@
+study_id,bib_key,category,publication_date,quarter
+S030,38,Compliance,2024-10,2024/10-12
+S075,95,Compliance,2024-04,2024/4-6
+S091,114,Compliance,2024-08,2024/7-9
+S086,106,Compliance,2025-01,2025/1-3
+S099,123,Compliance,2025-11,2025/10-12
+S087,107,Compliance,2025-05,2025/4-6
+S082,102,Compliance and Security Risks (Textual),2021-07,2021/7-9
+S085,105,Compliance and Security Risks (Textual),2024-02,2024/1-3
+S076,96,Compliance and Security Risks (Textual),2024-10,2024/10-12
+S091,114,Compliance and Security Risks (Textual),2024-08,2024/7-9
+S094,117,Compliance and Security Risks (Textual),2025-04,2025/4-6
+S114,139,Correctness,2021-08,2021/7-9
+S013,16,Correctness,2023-03,2023/1-3
+S021,24,Correctness,2024-03,2024/1-3
+S092,115,Correctness,2024-10,2024/10-12
+S001,2,Correctness,2024-06,2024/4-6
+S010,12,Correctness,2024-05,2024/4-6
+S014,17,Correctness,2024-06,2024/4-6
+S090,112,Correctness,2024-06,2024/4-6
+S063,81,Correctness,2024-09,2024/7-9
+S091,114,Correctness,2024-08,2024/7-9
+S002,3,Correctness,2025-02,2025/1-3
+S048,63,Correctness,2025-03,2025/1-3
+S068,86,Correctness,2025-03,2025/1-3
+S086,106,Correctness,2025-01,2025/1-3
+S089,110,Correctness,2025-03,2025/1-3
+S110,134,Correctness,2025-03,2025/1-3
+S047,62,Correctness,2025-05,2025/4-6
+S050,66,Correctness,2025-05,2025/4-6
+S087,107,Correctness,2025-05,2025/4-6
+S094,117,Correctness,2025-04,2025/4-6
+S100,124,Correctness,2026-02,2026/1-3
+S064,82,Data Contamination Risks,2024-02,2024/1-3
+S085,105,Data Contamination Risks,2024-02,2024/1-3
+S006,7,Data Contamination Risks,2024-12,2024/10-12
+S078,98,Data Contamination Risks,2024-06,2024/4-6
+S073,93,Data Contamination Risks,2024-07,2024/7-9
+S088,109,Data Contamination Risks,2025-04,2025/4-6
+S097,120,Data Contamination Risks,2025-05,2025/4-6
+S082,102,Distribution Imbalance Issues,2021-07,2021/7-9
+S114,139,Distribution Imbalance Issues,2021-08,2021/7-9
+S069,87,Distribution Imbalance Issues,2023-09,2023/7-9
+S081,101,Distribution Imbalance Issues,2023-08,2023/7-9
+S011,13,Distribution Imbalance Issues,2024-02,2024/1-3
+S064,82,Distribution Imbalance Issues,2024-02,2024/1-3
+S085,105,Distribution Imbalance Issues,2024-02,2024/1-3
+S006,7,Distribution Imbalance Issues,2024-12,2024/10-12
+S079,99,Distribution Imbalance Issues,2024-10,2024/10-12
+S092,115,Distribution Imbalance Issues,2024-10,2024/10-12
+S001,2,Distribution Imbalance Issues,2024-06,2024/4-6
+S090,112,Distribution Imbalance Issues,2024-06,2024/4-6
+S024,27,Distribution Imbalance Issues,2024-07,2024/7-9
+S029,37,Distribution Imbalance Issues,2024-09,2024/7-9
+S063,81,Distribution Imbalance Issues,2024-09,2024/7-9
+S073,93,Distribution Imbalance Issues,2024-07,2024/7-9
+S077,97,Distribution Imbalance Issues,2024-08,2024/7-9
+S091,114,Distribution Imbalance Issues,2024-08,2024/7-9
+S005,6,Distribution Imbalance Issues,2025-02,2025/1-3
+S042,54,Distribution Imbalance Issues,2025-03,2025/1-3
+S086,106,Distribution Imbalance Issues,2025-01,2025/1-3
+S104,128,Distribution Imbalance Issues,2025-11,2025/10-12
+S046,61,Distribution Imbalance Issues,2025-05,2025/4-6
+S047,62,Distribution Imbalance Issues,2025-05,2025/4-6
+S059,76,Distribution Imbalance Issues,2025-04,2025/4-6
+S060,77,Distribution Imbalance Issues,2025-05,2025/4-6
+S083,103,Distribution Imbalance Issues,2025-04,2025/4-6
+S094,117,Distribution Imbalance Issues,2025-04,2025/4-6
+S093,116,Distribution Imbalance Issues,2025-08,2025/7-9
+S011,13,Efficiency,2024-02,2024/1-3
+S012,14,Efficiency,2024-02,2024/1-3
+S048,63,Efficiency,2025-03,2025/1-3
+S089,110,Efficiency,2025-03,2025/1-3
+S050,66,Efficiency,2025-05,2025/4-6
+S103,127,Efficiency,2026-01,2026/1-3
+S070,88,Inadequate Diversity,2023-12,2023/10-12
+S003,4,Inadequate Diversity,2023-09,2023/7-9
+S023,26,Inadequate Diversity,2023-08,2023/7-9
+S081,101,Inadequate Diversity,2023-08,2023/7-9
+S085,105,Inadequate Diversity,2024-02,2024/1-3
+S031,39,Inadequate Diversity,2024-12,2024/10-12
+S080,100,Inadequate Diversity,2024-12,2024/10-12
+S009,11,Inadequate Diversity,2024-04,2024/4-6
+S010,12,Inadequate Diversity,2024-05,2024/4-6
+S014,17,Inadequate Diversity,2024-06,2024/4-6
+S037,46,Inadequate Diversity,2024-04,2024/4-6
+S090,112,Inadequate Diversity,2024-06,2024/4-6
+S095,118,Inadequate Diversity,2024-05,2024/4-6
+S004,5,Inadequate Diversity,2024-07,2024/7-9
+S015,18,Inadequate Diversity,2024-07,2024/7-9
+S039,51,Inadequate Diversity,2024-08,2024/7-9
+S091,114,Inadequate Diversity,2024-08,2024/7-9
+S112,137,Inadequate Diversity,2024-09,2024/7-9
+S049,65,Inadequate Diversity,2025-02,2025/1-3
+S086,106,Inadequate Diversity,2025-01,2025/1-3
+S110,134,Inadequate Diversity,2025-03,2025/1-3
+S104,128,Inadequate Diversity,2025-11,2025/10-12
+S047,62,Inadequate Diversity,2025-05,2025/4-6
+S057,74,Inadequate Diversity,2025-06,2025/4-6
+S083,103,Inadequate Diversity,2025-04,2025/4-6
+S100,124,Inadequate Diversity,2026-02,2026/1-3
+S082,102,Low-Value Data,2021-07,2021/7-9
+S016,19,Low-Value Data,2023-02,2023/1-3
+S061,79,Low-Value Data,2024-01,2024/1-3
+S064,82,Low-Value Data,2024-02,2024/1-3
+S085,105,Low-Value Data,2024-02,2024/1-3
+S006,7,Low-Value Data,2024-12,2024/10-12
+S092,115,Low-Value Data,2024-10,2024/10-12
+S078,98,Low-Value Data,2024-06,2024/4-6
+S090,112,Low-Value Data,2024-06,2024/4-6
+S071,89,Low-Value Data,2024-07,2024/7-9
+S091,114,Low-Value Data,2024-08,2024/7-9
+S002,3,Low-Value Data,2025-02,2025/1-3
+S005,6,Low-Value Data,2025-02,2025/1-3
+S068,86,Low-Value Data,2025-03,2025/1-3
+S046,61,Low-Value Data,2025-05,2025/4-6
+S059,76,Low-Value Data,2025-04,2025/4-6
+S060,77,Low-Value Data,2025-05,2025/4-6
+S072,92,Low-Value Data,2025-04,2025/4-6
+S094,117,Low-Value Data,2025-04,2025/4-6
+S065,83,Maintainability,2024-12,2024/10-12
+S092,115,Maintainability,2024-10,2024/10-12
+S002,3,Maintainability,2025-02,2025/1-3
+S048,63,Maintainability,2025-03,2025/1-3
+S086,106,Maintainability,2025-01,2025/1-3
+S050,66,Maintainability,2025-05,2025/4-6
+S058,75,Maintainability,2025-06,2025/4-6
+S087,107,Maintainability,2025-05,2025/4-6
+S067,85,Redundancy Issues,2023-10,2023/10-12
+S081,101,Redundancy Issues,2023-08,2023/7-9
+S064,82,Redundancy Issues,2024-02,2024/1-3
+S085,105,Redundancy Issues,2024-02,2024/1-3
+S092,115,Redundancy Issues,2024-10,2024/10-12
+S010,12,Redundancy Issues,2024-05,2024/4-6
+S078,98,Redundancy Issues,2024-06,2024/4-6
+S090,112,Redundancy Issues,2024-06,2024/4-6
+S063,81,Redundancy Issues,2024-09,2024/7-9
+S091,114,Redundancy Issues,2024-08,2024/7-9
+S005,6,Redundancy Issues,2025-02,2025/1-3
+S059,76,Redundancy Issues,2025-04,2025/4-6
+S094,117,Redundancy Issues,2025-04,2025/4-6
+S097,120,Redundancy Issues,2025-05,2025/4-6
+S108,132,Redundancy Issues,2025-04,2025/4-6
+S093,116,Redundancy Issues,2025-08,2025/7-9
+S106,130,Robustness,2024-06,2024/4-6
+S002,3,Robustness,2025-02,2025/1-3
+S082,102,Security,2021-07,2021/7-9
+S114,139,Security,2021-08,2021/7-9
+S019,22,Security,2022-11,2022/10-12
+S007,9,Security,2022-04,2022/4-6
+S018,21,Security,2022-08,2022/7-9
+S017,20,Security,2023-12,2023/10-12
+S064,82,Security,2024-02,2024/1-3
+S037,46,Security,2024-04,2024/4-6
+S041,53,Security,2024-09,2024/7-9
+S112,137,Security,2024-09,2024/7-9
+S048,63,Security,2025-03,2025/1-3
+S089,110,Security,2025-03,2025/1-3
+S087,107,Security,2025-05,2025/4-6
+S092,115,Understandability,2024-10,2024/10-12
+S090,112,Understandability,2024-06,2024/4-6
+S002,3,Understandability,2025-02,2025/1-3
+S086,106,Understandability,2025-01,2025/1-3
+S058,75,Understandability,2025-06,2025/4-6
+S072,92,Understandability,2025-04,2025/4-6
+S103,127,Understandability,2026-01,2026/1-3

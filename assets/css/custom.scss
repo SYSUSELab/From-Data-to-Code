@@ -64,7 +64,7 @@ body {
 }
 
 body {
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.65;
 }
 
@@ -79,6 +79,29 @@ body {
 
 .main-content {
   color: var(--text-main);
+}
+
+#main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.rq-icon {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  margin-inline-end: 0.3em;
+  color: var(--accent-cyan);
+  vertical-align: -0.15em;
+}
+
+@media (min-width: 50rem) {
+  .main-content [id] {
+    scroll-margin-top: 5rem;
+  }
 }
 
 .main-content p,
@@ -170,9 +193,12 @@ html[data-theme="light"] .search-result.active {
 
 h1,
 h2,
-h3 {
+h3,
+.main-content h1,
+.main-content h2,
+.main-content h3 {
   color: var(--heading-color);
-  font-family: "Poppins", sans-serif;
+  font-family: "Source Serif 4", Georgia, serif;
   font-weight: 800;
   letter-spacing: 0;
 }
@@ -507,7 +533,7 @@ html[data-theme="light"] .hero-visual__image--dark {
   border-radius: 7px;
   color: var(--accent-blue);
   cursor: pointer;
-  font: 750 0.86rem/1 "Inter", system-ui, sans-serif;
+  font: 750 0.86rem/1 "IBM Plex Sans", system-ui, sans-serif;
   margin: 0.2rem 0 1.8rem;
   padding: 0.7rem 0.9rem;
 }
@@ -587,7 +613,7 @@ td {
   color: var(--text-main);
   cursor: pointer;
   display: inline-flex;
-  font: 700 0.82rem/1 "Inter", system-ui, sans-serif;
+  font: 700 0.82rem/1 "IBM Plex Sans", system-ui, sans-serif;
   gap: 0.45rem;
   min-height: 2.25rem;
   padding: 0 0.85rem;
@@ -645,4 +671,12 @@ td {
   .paper-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Keep data documentation and navigation readable on narrow screens. */
+.site-title { font-size: 1.35rem; line-height: 1.2; }
+.main-content table { font-size: 0.93rem; }
+@media (max-width: 50rem) {
+  .main-content .table-wrapper { overflow-x: auto; }
+  .hero-actions { gap: 0.65rem; }
 }

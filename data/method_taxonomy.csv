@@ -1,0 +1,33 @@
+method_id,taxonomy_scope,method_path,method_leaf,n_studies
+generated_code_detection_01,generated_code_detection,Dynamic Analysis > Test-Based Execution Analysis,Test-Based Execution Analysis,43
+generated_code_detection_02,generated_code_detection,Dynamic Analysis > Resource and Performance Measurement,Resource and Performance Measurement,3
+generated_code_detection_03,generated_code_detection,Static Analysis > Rule-Based Detection,Rule-Based Detection,27
+generated_code_detection_04,generated_code_detection,Static Analysis > Human Review and Manual Inspection,Human Review and Manual Inspection,14
+generated_code_detection_05,generated_code_detection,Model-Based Detection > LLM-Based Evaluation,LLM-Based Evaluation,10
+generated_code_detection_06,generated_code_detection,Model-Based Detection > Task-Specific Learned Detection,Task-Specific Learned Detection,3
+training_data_detection_01,training_data_detection,Dynamic Analysis > Execution-Based Validation,Execution-Based Validation,3
+training_data_detection_02,training_data_detection,"Static and Corpus Audit > Syntax, Rule, Metadata, and Overlap Checks","Syntax, Rule, Metadata, and Overlap Checks",25
+training_data_detection_03,training_data_detection,Static and Corpus Audit > Human-in-the-Loop Review,Human-in-the-Loop Review,8
+training_data_detection_04,training_data_detection,Static and Corpus Audit > Provenance and Version-History Audit,Provenance and Version-History Audit,1
+training_data_detection_05,training_data_detection,Static and Corpus Audit > Model-Membership and Attribution Audit,Model-Membership and Attribution Audit,2
+training_data_detection_06,training_data_detection,Model-Based Detection > LLM-Based Dataset Screening,LLM-Based Dataset Screening,13
+training_data_detection_07,training_data_detection,Model-Based Detection > Task-Specific Learned Classifiers,Task-Specific Learned Classifiers,5
+generated_code_mitigation_01,generated_code_mitigation,Model-Level Mitigation > Model Adaptation and Fine-Tuning,Model Adaptation and Fine-Tuning,6
+generated_code_mitigation_02,generated_code_mitigation,Model-Level Mitigation > Reward-Guided Training,Reward-Guided Training,3
+generated_code_mitigation_03,generated_code_mitigation,Model-Level Mitigation > Training-Time Repetition Control,Training-Time Repetition Control,1
+generated_code_mitigation_04,generated_code_mitigation,Generation-Level Mitigation > Pre-Generation > Prompt Constraints,Prompt Constraints,4
+generated_code_mitigation_05,generated_code_mitigation,Generation-Level Mitigation > Pre-Generation > Privacy-Preserving Input Transformation,Privacy-Preserving Input Transformation,1
+generated_code_mitigation_06,generated_code_mitigation,Generation-Level Mitigation > Pre-Generation > Retrieval-Augmented Generation,Retrieval-Augmented Generation,5
+generated_code_mitigation_07,generated_code_mitigation,Generation-Level Mitigation > In-Generation > Decoding-Time Intervention,Decoding-Time Intervention,4
+generated_code_mitigation_08,generated_code_mitigation,Generation-Level Mitigation > Post-Generation > Feedback-Guided Regeneration,Feedback-Guided Regeneration,3
+generated_code_mitigation_09,generated_code_mitigation,Generation-Level Mitigation > Post-Generation > Deterministic Repair and Transformation,Deterministic Repair and Transformation,2
+training_data_mitigation_01,training_data_mitigation,Data Cleaning and Filtering > Execution-Feedback-Based Filtering,Execution-Feedback-Based Filtering,6
+training_data_mitigation_02,training_data_mitigation,"Data Cleaning and Filtering > Deterministic Validation, Filtering, Sanitization, and Deduplication","Deterministic Validation, Filtering, Sanitization, and Deduplication",15
+training_data_mitigation_03,training_data_mitigation,Data Cleaning and Filtering > LLM Scoring or Judging,LLM Scoring or Judging,8
+training_data_mitigation_04,training_data_mitigation,Data Cleaning and Filtering > Learned Quality or Relevance Scorers,Learned Quality or Relevance Scorers,5
+training_data_mitigation_05,training_data_mitigation,Data Cleaning and Filtering > Manual Review and Curation,Manual Review and Curation,4
+training_data_mitigation_06,training_data_mitigation,Mixture Design and Quality-Aware Sampling,Mixture Design and Quality-Aware Sampling,6
+training_data_mitigation_07,training_data_mitigation,Data Enhancement > LLM-Based Rewriting and Semantic Correction,LLM-Based Rewriting and Semantic Correction,3
+training_data_mitigation_08,training_data_mitigation,Data Enhancement > Rule- or Tool-Based Transformation,Rule- or Tool-Based Transformation,1
+training_data_mitigation_09,training_data_mitigation,Data Augmentation > Curated-Source Expansion,Curated-Source Expansion,2
+training_data_mitigation_10,training_data_mitigation,Data Augmentation > Synthetic Data Generation,Synthetic Data Generation,13

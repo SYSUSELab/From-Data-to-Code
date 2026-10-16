@@ -1,0 +1,67 @@
+{
+  "status_as_of": "2026-08-29",
+  "corpus": {
+    "included_papers": 114,
+    "status_counts": {
+      "accepted_nonarchival_workshop": 3,
+      "formally_published": 74,
+      "possible_formal_successor_unconfirmed": 1,
+      "preprint_only": 22,
+      "technical_report_only": 14
+    },
+    "peer_review_counts": {
+      "no_formal_peer_review_found": 36,
+      "peer_reviewed": 74,
+      "unresolved_version_link": 1,
+      "workshop_review_unclear": 1,
+      "workshop_reviewed": 2
+    },
+    "unresolved_version_links": [
+      "S074"
+    ]
+  },
+  "author_overlap": {
+    "definition": "An included study has at least one author who is the same person as a manuscript author; exact-name candidates are identity-adjudicated.",
+    "study_count": 18,
+    "share_percent": "15.8%",
+    "study_ids": [
+      "S001",
+      "S030",
+      "S072",
+      "S098",
+      "S099",
+      "S100",
+      "S101",
+      "S102",
+      "S103",
+      "S104",
+      "S105",
+      "S106",
+      "S107",
+      "S108",
+      "S109",
+      "S110",
+      "S111",
+      "S112"
+    ],
+    "status_counts_current": {
+      "formally_published": 11,
+      "preprint_only": 7
+    },
+    "current_non_peer_reviewed_ids": [
+      "S100",
+      "S103",
+      "S105",
+      "S108",
+      "S109",
+      "S110",
+      "S111"
+    ]
+  },
+  "limitations": [
+    "The repository lacks per-study inclusion dates, so historical publication status is not reconstructed.",
+    "S074 has a plausible 2025 formal successor, but the version relation requires author confirmation.",
+    "The broad-heading automation table is an existence crosswalk, not an exhaustive method-by-subtype matrix.",
+    "Peer-reviewed-only results filter included-copy coding by current study status; they are not a complete re-extraction from every version of record."
+  ]
+}

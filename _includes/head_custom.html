@@ -30,7 +30,7 @@
 {% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
 {% if page.url == "/" %}
 <link rel="preload" as="image" href="{{ '/images/from-data-to-code-hero-light.png' | relative_url }}" fetchpriority="high">
 <link rel="preload" as="image" href="{{ '/images/from-data-to-code-hero-dark.png' | relative_url }}" fetchpriority="high">
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function enhancePaperLists() {
-    var cards = Array.prototype.slice.call(document.querySelectorAll(".main-content > .paper-card"));
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".main-content .paper-card"));
     var groups = [];
     var group = [];
 

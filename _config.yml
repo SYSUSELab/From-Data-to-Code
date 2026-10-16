@@ -1,6 +1,6 @@
 title: "From Data to Code"
 description: "Bridging Generation and Training: A systematic review of training data quality issues and generated code quality issues in large language models for code."
-remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.12.0
 
 # Site settings
 url: "https://sysuselab.github.io"
@@ -29,3 +29,15 @@ heading_anchors: true
 
 # Footer content
 footer_content: "© 2026 SYSUSELab. From Data to Code: Systematic Review of Quality Issues in LLMs for Code."
+
+# Read downloadable result tables as the site's single data source.
+data_dir: data
+lang: en
+
+# Keep development tools and repository-only guides out of the generated site.
+exclude:
+  - README.md
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - paper/README.md

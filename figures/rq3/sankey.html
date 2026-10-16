@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RQ3 Sankey diagram</title>
+  <style>
+    html, body { margin: 0; padding: 0; overflow-x: hidden; background: #f4f6f8; color: #20262d; font-family: "Liberation Sans", Arial, sans-serif; }
+    #figure-frame { width: min(2050px, 100%); height: auto; aspect-ratio: 2050 / 1370; margin: 0 auto; background: #fff; box-shadow: 0 2px 18px rgba(30,40,50,.12); }
+    #figure-frame svg { display: block; width: 100%; height: auto; }
+    .interactive-note { box-sizing: border-box; width: min(2050px, 100%); margin: 0 auto; padding: 12px 18px 16px; font-size: 15px; color: #52606c; background: #fff; }
+    #tooltip { position: fixed; z-index: 10; display: none; pointer-events: none; white-space: pre-wrap; max-width: 560px; padding: 12px 14px; border: 1px solid #bcc5cc; border-radius: 7px; background: rgba(255,255,255,.98); color: #18212a; box-shadow: 0 5px 22px rgba(20,30,40,.18); font-size: 15px; line-height: 1.42; }
+    @page { size: 7.4300in 4.9654in; margin: 0; }
+    @media print {
+      html, body { width: 7.4300in; height: 4.9654in; background: #fff; }
+      #figure-frame { width: 7.4300in; height: 4.9654in; aspect-ratio: auto; box-shadow: none; }
+      #figure-frame svg { width: 7.4300in; height: 4.9654in; }
+      .interactive-note, #tooltip { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div id="figure-frame"><svg id="sankey-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2050 1370" width="2050" height="1370" role="img" aria-labelledby="figure-title figure-desc">
+  <title id="figure-title">RQ3 training-data to generated-code quality Sankey diagram</title>
+  <desc id="figure-desc">Study-family-source-target path assignments connect twelve observed RQ2 training-data quality leaves through twelve mapping families to eight RQ1 generated-code quality dimensions.</desc>
+  <style>
+    :root { color-scheme: light; }
+    text { font-family: "Liberation Sans", Arial, sans-serif; fill: #20262d; }
+    .title { font-size: 39px; font-weight: 700; }
+    .subtitle { font-size: 26px; fill: #56616c; }
+    .column-heading { font-size: 27px; font-weight: 700; letter-spacing: 1.1px; fill: #3e4852; }
+    .column-rule { stroke: #cfd5da; stroke-width: 1.5; }
+    .sankey-link { transition: opacity 120ms ease; cursor: pointer; }
+    .sankey-node { cursor: pointer; }
+    .node-label { font-size: 29px; font-weight: 600; }
+    .mapping-label { font-size: 28px; font-weight: 700; }
+    .long-target-label { font-size: 25px; }
+    .legend text { font-size: 25px; fill: #45515c; }
+    .footnote { font-size: 23px; fill: #59646e; }
+    .sankey-link.is-dimmed, .sankey-node.is-dimmed, .node-label.is-dimmed { opacity: 0.10 !important; }
+    .sankey-link.is-highlighted { opacity: 0.86 !important; stroke: rgba(30,35,40,0.28); stroke-width: 1.2; }
+    .sankey-node.is-highlighted { stroke: #17212b; stroke-width: 3; }
+  </style>
+  <rect width="2050" height="1370" fill="#ffffff"/>
+  <text class="title" x="1025" y="48" text-anchor="middle">Training-data quality and generated-code quality relationships</text>
+  <text class="subtitle" x="1025" y="84" text-anchor="middle">Band widths and percentages show literature coverage; one study may support multiple paths</text>
+  <text class="column-heading" x="460" y="137" text-anchor="end">RQ2 DATA-QUALITY LEAF</text>
+  <text class="column-heading" x="1079" y="137" text-anchor="start">MAPPING FAMILY</text>
+  <text class="column-heading" x="1990" y="137" text-anchor="end">RQ1 GENERATED-CODE QUALITY</text>
+  <line class="column-rule" x1="90" y1="153" x2="478" y2="153"/>
+  <line class="column-rule" x1="1070" y1="153" x2="1460" y2="153"/>
+  <line class="column-rule" x1="1665" y1="153" x2="1990" y2="153"/>
+  <g class="links" aria-label="Sankey bands">
+<path id="edge-E001" class="sankey-link" d="M 478 180 C 756.24 180, 791.76 199.5, 1070 199.5 L 1070 284.33 C 791.76 284.33, 756.24 264.83, 478 264.83 Z" fill="rgba(78,121,167,0.48)" data-tooltip="Correctness → Defect-Pattern Carryover
+Share of path assignments: 13.9%
+Distinct studies: 14
+Distinct evidence rows: 16
+Studies: S001; S010; S013; S014; S021; S047; S048; S050; S063; S086; S087; S089; S094; S100
+Evidence: A-E015; A-E031; A-E032; A-E034; A-E046; B021; B027; C002; C010; C015; C024; C029; C030; C033; C042; C046" data-mapping="F01" data-source-logical="RQ2_CA_COR" data-target-logical="F01"><title>Correctness → Defect-Pattern Carryover
+Share of path assignments: 13.9%
+Distinct studies: 14
+Distinct evidence rows: 16
+Studies: S001; S010; S013; S014; S021; S047; S048; S050; S063; S086; S087; S089; S094; S100
+Evidence: A-E015; A-E031; A-E032; A-E034; A-E046; B021; B027; C002; C010; C015; C024; C029; C030; C033; C042; C046</title></path>
+<path id="edge-E002" class="sankey-link" d="M 478 303.83 C 756.24 303.83, 791.76 323.33, 1070 323.33 L 1070 383.93 C 791.76 383.93, 756.24 364.43, 478 364.43 Z" fill="rgba(225,87,89,0.48)" data-tooltip="Security → Vulnerability-Pattern Carryover
+Share of path assignments: 9.9%
+Distinct studies: 10
+Distinct evidence rows: 10
+Studies: S007; S017; S018; S019; S037; S082; S087; S089; S112; S114
+Evidence: A-E001; A-E003; A-E041; A-E045; A-E047; B008; B032; B034; C008; C048" data-mapping="F02" data-source-logical="RQ2_CA_SEC" data-target-logical="F02"><title>Security → Vulnerability-Pattern Carryover
+Share of path assignments: 9.9%
+Distinct studies: 10
+Distinct evidence rows: 10
+Studies: S007; S017; S018; S019; S037; S082; S087; S089; S112; S114
+Evidence: A-E001; A-E003; A-E041; A-E045; A-E047; B008; B032; B034; C008; C048</title></path>
+<path id="edge-E003" class="sankey-link" d="M 478 364.43 C 756.24 364.43, 791.76 422.93, 1070 422.93 L 1070 441.1 C 791.76 441.1, 756.24 382.6, 478 382.6 Z" fill="rgba(176,122,161,0.48)" data-tooltip="Security → Restricted/Sensitive-Content Reproduction Risks
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S030; S075; S082
+Evidence: A-E037; A-E042; B007" data-mapping="F03" data-source-logical="RQ2_CA_SEC" data-target-logical="F03"><title>Security → Restricted/Sensitive-Content Reproduction Risks
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S030; S075; S082
+Evidence: A-E037; A-E042; B007</title></path>
+<path id="edge-E004" class="sankey-link" d="M 478 421.6 C 756.24 421.6, 791.76 441.1, 1070 441.1 L 1070 459.28 C 791.76 459.28, 756.24 439.78, 478 439.78 Z" fill="rgba(176,122,161,0.48)" data-tooltip="Compliance → Restricted/Sensitive-Content Reproduction Risks
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S041; S075; S087
+Evidence: A-E008; A-E036; A-E048" data-mapping="F03" data-source-logical="RQ2_CA_COM" data-target-logical="F03"><title>Compliance → Restricted/Sensitive-Content Reproduction Risks
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S041; S075; S087
+Evidence: A-E008; A-E036; A-E048</title></path>
+<path id="edge-E005" class="sankey-link" d="M 478 689.32 C 756.24 689.32, 791.76 459.28, 1070 459.28 L 1070 471.4 C 791.76 471.4, 756.24 701.44, 478 701.44 Z" fill="rgba(176,122,161,0.48)" data-tooltip="Compliance and Security Risks (Textual) → Restricted/Sensitive-Content Reproduction Risks
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S082; S091
+Evidence: A-E027; A-E050" data-mapping="F03" data-source-logical="RQ2_NC_CSR" data-target-logical="F03"><title>Compliance and Security Risks (Textual) → Restricted/Sensitive-Content Reproduction Risks
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S082; S091
+Evidence: A-E027; A-E050</title></path>
+<path id="edge-E006" class="sankey-link" d="M 478 478.78 C 756.24 478.78, 791.76 510.4, 1070 510.4 L 1070 522.52 C 791.76 522.52, 756.24 490.9, 478 490.9 Z" fill="rgba(118,183,178,0.48)" data-tooltip="Robustness → Robustness-Pattern Associations
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S002; S106
+Evidence: A-E049; B041" data-mapping="F12" data-source-logical="RQ2_CA_ROB" data-target-logical="F12"><title>Robustness → Robustness-Pattern Associations
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S002; S106
+Evidence: A-E049; B041</title></path>
+<path id="edge-E007" class="sankey-link" d="M 478 529.9 C 756.24 529.9, 791.76 561.52, 1070 561.52 L 1070 567.58 C 791.76 567.58, 756.24 535.96, 478 535.96 Z" fill="rgba(89,161,79,0.48)" data-tooltip="Maintainability → Structural-Quality Associations
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S065
+Evidence: A-E039" data-mapping="F04" data-source-logical="RQ2_CA_MAI" data-target-logical="F04"><title>Maintainability → Structural-Quality Associations
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S065
+Evidence: A-E039</title></path>
+<path id="edge-E008" class="sankey-link" d="M 478 574.96 C 756.24 574.96, 791.76 606.58, 1070 606.58 L 1070 618.7 C 791.76 618.7, 756.24 587.08, 478 587.08 Z" fill="rgba(237,201,72,0.48)" data-tooltip="Understandability → Clarity-Pattern Associations
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S086; S103
+Evidence: C018; C028" data-mapping="F05" data-source-logical="RQ2_CA_UND" data-target-logical="F05"><title>Understandability → Clarity-Pattern Associations
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S086; S103
+Evidence: C018; C028</title></path>
+<path id="edge-E009" class="sankey-link" d="M 478 626.08 C 756.24 626.08, 791.76 657.7, 1070 657.7 L 1070 681.94 C 791.76 681.94, 756.24 650.32, 478 650.32 Z" fill="rgba(242,142,43,0.48)" data-tooltip="Efficiency → Efficiency-Pattern Carryover
+Share of path assignments: 4.0%
+Distinct studies: 4
+Distinct evidence rows: 4
+Studies: S011; S012; S089; S103
+Evidence: B011; B037; C009; C019" data-mapping="F06" data-source-logical="RQ2_CA_EFF" data-target-logical="F06"><title>Efficiency → Efficiency-Pattern Carryover
+Share of path assignments: 4.0%
+Distinct studies: 4
+Distinct evidence rows: 4
+Studies: S011; S012; S089; S103
+Evidence: B011; B037; C009; C019</title></path>
+<path id="edge-E010" class="sankey-link" d="M 478 740.44 C 756.24 740.44, 791.76 720.94, 1070 720.94 L 1070 830 C 791.76 830, 756.24 849.5, 478 849.5 Z" fill="rgba(156,117,95,0.48)" data-tooltip="Distribution Imbalance Issues → Prevalence-Associated Quality Skew
+Share of path assignments: 17.8%
+Distinct studies: 17
+Distinct evidence rows: 18
+Studies: S001; S006; S011; S024; S029; S042; S059; S063; S064; S069; S073; S082; S083; S090; S094; S104; S114
+Evidence: A-E002; A-E007; A-E009; A-E012; A-E019; A-E023; A-E030; A-E040; B002; B012; B036; B039; B040; B042; C022; C036; C037; C044" data-mapping="F09" data-source-logical="RQ2_NC_DIS" data-target-logical="F09"><title>Distribution Imbalance Issues → Prevalence-Associated Quality Skew
+Share of path assignments: 17.8%
+Distinct studies: 17
+Distinct evidence rows: 18
+Studies: S001; S006; S011; S024; S029; S042; S059; S063; S064; S069; S073; S082; S083; S090; S094; S104; S114
+Evidence: A-E002; A-E007; A-E009; A-E012; A-E019; A-E023; A-E030; A-E040; B002; B012; B036; B039; B040; B042; C022; C036; C037; C044</title></path>
+<path id="edge-E011" class="sankey-link" d="M 478 888.5 C 756.24 888.5, 791.76 869, 1070 869 L 1070 887.18 C 791.76 887.18, 756.24 906.68, 478 906.68 Z" fill="rgba(121,112,110,0.48)" data-tooltip="Redundancy Issues → Redundancy-Associated Reinforcement and Degeneration
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S010; S059; S108
+Evidence: A-E022; A-E035; B001" data-mapping="F08" data-source-logical="RQ2_NC_RED" data-target-logical="F08"><title>Redundancy Issues → Redundancy-Associated Reinforcement and Degeneration
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S010; S059; S108
+Evidence: A-E022; A-E035; B001</title></path>
+<path id="edge-E012" class="sankey-link" d="M 478 945.68 C 756.24 945.68, 791.76 926.18, 1070 926.18 L 1070 1071.61 C 791.76 1071.61, 756.24 1091.11, 478 1091.11 Z" fill="rgba(47,143,157,0.48)" data-tooltip="Inadequate Diversity → Underexposure-Associated Quality Gaps
+Share of path assignments: 23.8%
+Distinct studies: 22
+Distinct evidence rows: 27
+Studies: S003; S004; S009; S010; S014; S015; S023; S031; S037; S039; S047; S049; S057; S070; S080; S081; S091; S100; S104; S105; S110; S112
+Evidence: A-E004; A-E005; A-E006; A-E018; A-E025; A-E028; A-E029; A-E033; B009; B018; B020; B022; B033; B038; C004; C005; C011; C012; C013; C016; C020; C021; C031; C032; C038; C040; C045" data-mapping="F10" data-source-logical="RQ2_NC_DIV" data-target-logical="F10"><title>Inadequate Diversity → Underexposure-Associated Quality Gaps
+Share of path assignments: 23.8%
+Distinct studies: 22
+Distinct evidence rows: 27
+Studies: S003; S004; S009; S010; S014; S015; S023; S031; S037; S039; S047; S049; S057; S070; S080; S081; S091; S100; S104; S105; S110; S112
+Evidence: A-E004; A-E005; A-E006; A-E018; A-E025; A-E028; A-E029; A-E033; B009; B018; B020; B022; B033; B038; C004; C005; C011; C012; C013; C016; C020; C021; C031; C032; C038; C040; C045</title></path>
+<path id="edge-E013" class="sankey-link" d="M 478 1130.11 C 756.24 1130.11, 791.76 1110.61, 1070 1110.61 L 1070 1128.79 C 791.76 1128.79, 756.24 1148.29, 478 1148.29 Z" fill="rgba(128,100,162,0.48)" data-tooltip="Data Contamination Risks → Contamination-Associated Familiarity Differences
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S073; S088; S097
+Evidence: A-E011; B025; C034" data-mapping="F11" data-source-logical="RQ2_NC_CON" data-target-logical="F11"><title>Data Contamination Risks → Contamination-Associated Familiarity Differences
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S073; S088; S097
+Evidence: A-E011; B025; C034</title></path>
+<path id="edge-E014" class="sankey-link" d="M 478 1187.29 C 756.24 1187.29, 791.76 1167.79, 1070 1167.79 L 1070 1240.5 C 791.76 1240.5, 756.24 1260, 478 1260 Z" fill="rgba(255,157,167,0.48)" data-tooltip="Low-Value Data → Supervision-Signal Quality Associations
+Share of path assignments: 11.9%
+Distinct studies: 11
+Distinct evidence rows: 12
+Studies: S002; S016; S046; S059; S060; S061; S071; S072; S090; S091; S092
+Evidence: A-E010; A-E014; A-E016; A-E017; A-E024; B001; B005; B010; B028; B030; B031; B035" data-mapping="F07" data-source-logical="RQ2_NC_LOW" data-target-logical="F07"><title>Low-Value Data → Supervision-Signal Quality Associations
+Share of path assignments: 11.9%
+Distinct studies: 11
+Distinct evidence rows: 12
+Studies: S002; S016; S046; S059; S060; S061; S071; S072; S090; S091; S092
+Evidence: A-E010; A-E014; A-E016; A-E017; A-E024; B001; B005; B010; B028; B030; B031; B035</title></path>
+<path id="edge-E015" class="sankey-link" d="M 1088 199.5 C 1359.19 199.5, 1393.81 717.52, 1665 717.52 L 1665 802.35 C 1393.81 802.35, 1359.19 284.33, 1088 284.33 Z" fill="rgba(78,121,167,0.48)" data-tooltip="Defect-Pattern Carryover → Correctness
+Share of path assignments: 13.9%
+Distinct studies: 14
+Distinct evidence rows: 16
+Studies: S001; S010; S013; S014; S021; S047; S048; S050; S063; S086; S087; S089; S094; S100
+Evidence: A-E015; A-E031; A-E032; A-E034; A-E046; B021; B027; C002; C010; C015; C024; C029; C030; C033; C042; C046" data-mapping="F01" data-source-logical="F01" data-target-logical="RQ1_COR"><title>Defect-Pattern Carryover → Correctness
+Share of path assignments: 13.9%
+Distinct studies: 14
+Distinct evidence rows: 16
+Studies: S001; S010; S013; S014; S021; S047; S048; S050; S063; S086; S087; S089; S094; S100
+Evidence: A-E015; A-E031; A-E032; A-E034; A-E046; B021; B027; C002; C010; C015; C024; C029; C030; C033; C042; C046</title></path>
+<path id="edge-E016" class="sankey-link" d="M 1088 323.33 C 1359.19 323.33, 1393.81 277.5, 1665 277.5 L 1665 338.09 C 1393.81 338.09, 1359.19 383.93, 1088 383.93 Z" fill="rgba(225,87,89,0.48)" data-tooltip="Vulnerability-Pattern Carryover → Security
+Share of path assignments: 9.9%
+Distinct studies: 10
+Distinct evidence rows: 10
+Studies: S007; S017; S018; S019; S037; S082; S087; S089; S112; S114
+Evidence: A-E001; A-E003; A-E041; A-E045; A-E047; B008; B032; B034; C008; C048" data-mapping="F02" data-source-logical="F02" data-target-logical="RQ1_SEC"><title>Vulnerability-Pattern Carryover → Security
+Share of path assignments: 9.9%
+Distinct studies: 10
+Distinct evidence rows: 10
+Studies: S007; S017; S018; S019; S037; S082; S087; S089; S112; S114
+Evidence: A-E001; A-E003; A-E041; A-E045; A-E047; B008; B032; B034; C008; C048</title></path>
+<path id="edge-E017" class="sankey-link" d="M 1088 422.93 C 1359.19 422.93, 1393.81 395.27, 1665 395.27 L 1665 443.75 C 1393.81 443.75, 1359.19 471.4, 1088 471.4 Z" fill="rgba(176,122,161,0.48)" data-tooltip="Restricted/Sensitive-Content Reproduction Risks → Compliance
+Share of path assignments: 7.9%
+Distinct studies: 6
+Distinct evidence rows: 8
+Studies: S030; S041; S075; S082; S087; S091
+Evidence: A-E008; A-E027; A-E036; A-E037; A-E042; A-E048; A-E050; B007" data-mapping="F03" data-source-logical="F03" data-target-logical="RQ1_COM"><title>Restricted/Sensitive-Content Reproduction Risks → Compliance
+Share of path assignments: 7.9%
+Distinct studies: 6
+Distinct evidence rows: 8
+Studies: S030; S041; S075; S082; S087; S091
+Evidence: A-E008; A-E027; A-E036; A-E037; A-E042; A-E048; A-E050; B007</title></path>
+<path id="edge-E018" class="sankey-link" d="M 1088 510.4 C 1359.19 510.4, 1393.81 482.75, 1665 482.75 L 1665 488.81 C 1393.81 488.81, 1359.19 516.46, 1088 516.46 Z" fill="rgba(118,183,178,0.48)" data-tooltip="Robustness-Pattern Associations → Robustness
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S106
+Evidence: A-E049" data-mapping="F12" data-source-logical="F12" data-target-logical="RQ1_ROB"><title>Robustness-Pattern Associations → Robustness
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S106
+Evidence: A-E049</title></path>
+<path id="edge-E019" class="sankey-link" d="M 1088 516.46 C 1359.19 516.46, 1393.81 802.35, 1665 802.35 L 1665 808.41 C 1393.81 808.41, 1359.19 522.52, 1088 522.52 Z" fill="rgba(118,183,178,0.48)" data-tooltip="Robustness-Pattern Associations → Correctness
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S002
+Evidence: B041" data-mapping="F12" data-source-logical="F12" data-target-logical="RQ1_COR"><title>Robustness-Pattern Associations → Correctness
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S002
+Evidence: B041</title></path>
+<path id="edge-E020" class="sankey-link" d="M 1088 561.52 C 1359.19 561.52, 1393.81 527.81, 1665 527.81 L 1665 533.87 C 1393.81 533.87, 1359.19 567.58, 1088 567.58 Z" fill="rgba(89,161,79,0.48)" data-tooltip="Structural-Quality Associations → Maintainability
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S065
+Evidence: A-E039" data-mapping="F04" data-source-logical="F04" data-target-logical="RQ1_MAI"><title>Structural-Quality Associations → Maintainability
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S065
+Evidence: A-E039</title></path>
+<path id="edge-E021" class="sankey-link" d="M 1088 606.58 C 1359.19 606.58, 1393.81 578.93, 1665 578.93 L 1665 591.04 C 1393.81 591.04, 1359.19 618.7, 1088 618.7 Z" fill="rgba(237,201,72,0.48)" data-tooltip="Clarity-Pattern Associations → Understandability
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S086; S103
+Evidence: C018; C028" data-mapping="F05" data-source-logical="F05" data-target-logical="RQ1_UND"><title>Clarity-Pattern Associations → Understandability
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S086; S103
+Evidence: C018; C028</title></path>
+<path id="edge-E022" class="sankey-link" d="M 1088 657.7 C 1359.19 657.7, 1393.81 636.1, 1665 636.1 L 1665 660.34 C 1393.81 660.34, 1359.19 681.94, 1088 681.94 Z" fill="rgba(242,142,43,0.48)" data-tooltip="Efficiency-Pattern Carryover → Efficiency
+Share of path assignments: 4.0%
+Distinct studies: 4
+Distinct evidence rows: 4
+Studies: S011; S012; S089; S103
+Evidence: B011; B037; C009; C019" data-mapping="F06" data-source-logical="F06" data-target-logical="RQ1_EFF"><title>Efficiency-Pattern Carryover → Efficiency
+Share of path assignments: 4.0%
+Distinct studies: 4
+Distinct evidence rows: 4
+Studies: S011; S012; S089; S103
+Evidence: B011; B037; C009; C019</title></path>
+<path id="edge-E023" class="sankey-link" d="M 1088 720.94 C 1359.19 720.94, 1393.81 533.87, 1665 533.87 L 1665 539.93 C 1393.81 539.93, 1359.19 727, 1088 727 Z" fill="rgba(156,117,95,0.48)" data-tooltip="Prevalence-Associated Quality Skew → Maintainability
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S042
+Evidence: C036" data-mapping="F09" data-source-logical="F09" data-target-logical="RQ1_MAI"><title>Prevalence-Associated Quality Skew → Maintainability
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S042
+Evidence: C036</title></path>
+<path id="edge-E024" class="sankey-link" d="M 1088 727 C 1359.19 727, 1393.81 660.34, 1665 660.34 L 1665 672.46 C 1393.81 672.46, 1359.19 739.11, 1088 739.11 Z" fill="rgba(156,117,95,0.48)" data-tooltip="Prevalence-Associated Quality Skew → Efficiency
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S011; S042
+Evidence: B012; C037" data-mapping="F09" data-source-logical="F09" data-target-logical="RQ1_EFF"><title>Prevalence-Associated Quality Skew → Efficiency
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S011; S042
+Evidence: B012; C037</title></path>
+<path id="edge-E025" class="sankey-link" d="M 1088 739.11 C 1359.19 739.11, 1393.81 808.41, 1665 808.41 L 1665 893.24 C 1393.81 893.24, 1359.19 823.95, 1088 823.95 Z" fill="rgba(156,117,95,0.48)" data-tooltip="Prevalence-Associated Quality Skew → Correctness
+Share of path assignments: 13.9%
+Distinct studies: 14
+Distinct evidence rows: 14
+Studies: S001; S006; S024; S029; S059; S063; S064; S069; S082; S083; S090; S094; S104; S114
+Evidence: A-E002; A-E007; A-E009; A-E019; A-E023; A-E030; A-E040; B002; B036; B039; B040; B042; C022; C044" data-mapping="F09" data-source-logical="F09" data-target-logical="RQ1_COR"><title>Prevalence-Associated Quality Skew → Correctness
+Share of path assignments: 13.9%
+Distinct studies: 14
+Distinct evidence rows: 14
+Studies: S001; S006; S024; S029; S059; S063; S064; S069; S082; S083; S090; S094; S104; S114
+Evidence: A-E002; A-E007; A-E009; A-E019; A-E023; A-E030; A-E040; B002; B036; B039; B040; B042; C022; C044</title></path>
+<path id="edge-E026" class="sankey-link" d="M 1088 823.95 C 1359.19 823.95, 1393.81 1126.14, 1665 1126.14 L 1665 1132.2 C 1393.81 1132.2, 1359.19 830, 1088 830 Z" fill="rgba(156,117,95,0.48)" data-tooltip="Prevalence-Associated Quality Skew → Generation Derailment
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S073
+Evidence: A-E012" data-mapping="F09" data-source-logical="F09" data-target-logical="RQ1_DER"><title>Prevalence-Associated Quality Skew → Generation Derailment
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S073
+Evidence: A-E012</title></path>
+<path id="edge-E027" class="sankey-link" d="M 1088 869 C 1359.19 869, 1393.81 893.24, 1665 893.24 L 1665 905.36 C 1393.81 905.36, 1359.19 881.12, 1088 881.12 Z" fill="rgba(121,112,110,0.48)" data-tooltip="Redundancy-Associated Reinforcement and Degeneration → Correctness
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S010; S059
+Evidence: A-E035; B001" data-mapping="F08" data-source-logical="F08" data-target-logical="RQ1_COR"><title>Redundancy-Associated Reinforcement and Degeneration → Correctness
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S010; S059
+Evidence: A-E035; B001</title></path>
+<path id="edge-E028" class="sankey-link" d="M 1088 881.12 C 1359.19 881.12, 1393.81 1132.2, 1665 1132.2 L 1665 1138.26 C 1393.81 1138.26, 1359.19 887.18, 1088 887.18 Z" fill="rgba(121,112,110,0.48)" data-tooltip="Redundancy-Associated Reinforcement and Degeneration → Generation Derailment
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S108
+Evidence: A-E022" data-mapping="F08" data-source-logical="F08" data-target-logical="RQ1_DER"><title>Redundancy-Associated Reinforcement and Degeneration → Generation Derailment
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S108
+Evidence: A-E022</title></path>
+<path id="edge-E029" class="sankey-link" d="M 1088 926.18 C 1359.19 926.18, 1393.81 338.09, 1665 338.09 L 1665 350.21 C 1393.81 350.21, 1359.19 938.3, 1088 938.3 Z" fill="rgba(47,143,157,0.48)" data-tooltip="Underexposure-Associated Quality Gaps → Security
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S039; S049
+Evidence: C016; C021" data-mapping="F10" data-source-logical="F10" data-target-logical="RQ1_SEC"><title>Underexposure-Associated Quality Gaps → Security
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S039; S049
+Evidence: C016; C021</title></path>
+<path id="edge-E030" class="sankey-link" d="M 1088 938.3 C 1359.19 938.3, 1393.81 672.46, 1665 672.46 L 1665 678.52 C 1393.81 678.52, 1359.19 944.36, 1088 944.36 Z" fill="rgba(47,143,157,0.48)" data-tooltip="Underexposure-Associated Quality Gaps → Efficiency
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S010
+Evidence: A-E033" data-mapping="F10" data-source-logical="F10" data-target-logical="RQ1_EFF"><title>Underexposure-Associated Quality Gaps → Efficiency
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S010
+Evidence: A-E033</title></path>
+<path id="edge-E031" class="sankey-link" d="M 1088 944.36 C 1359.19 944.36, 1393.81 905.36, 1665 905.36 L 1665 1014.43 C 1393.81 1014.43, 1359.19 1053.43, 1088 1053.43 Z" fill="rgba(47,143,157,0.48)" data-tooltip="Underexposure-Associated Quality Gaps → Correctness
+Share of path assignments: 17.8%
+Distinct studies: 18
+Distinct evidence rows: 21
+Studies: S003; S004; S009; S014; S015; S023; S031; S039; S047; S057; S070; S080; S081; S091; S100; S104; S110; S112
+Evidence: A-E004; A-E005; A-E006; A-E018; A-E025; A-E028; B018; B020; B022; B033; C004; C005; C011; C012; C013; C020; C031; C032; C038; C040; C045" data-mapping="F10" data-source-logical="F10" data-target-logical="RQ1_COR"><title>Underexposure-Associated Quality Gaps → Correctness
+Share of path assignments: 17.8%
+Distinct studies: 18
+Distinct evidence rows: 21
+Studies: S003; S004; S009; S014; S015; S023; S031; S039; S047; S057; S070; S080; S081; S091; S100; S104; S110; S112
+Evidence: A-E004; A-E005; A-E006; A-E018; A-E025; A-E028; B018; B020; B022; B033; C004; C005; C011; C012; C013; C020; C031; C032; C038; C040; C045</title></path>
+<path id="edge-E032" class="sankey-link" d="M 1088 1053.43 C 1359.19 1053.43, 1393.81 1138.26, 1665 1138.26 L 1665 1156.44 C 1393.81 1156.44, 1359.19 1071.61, 1088 1071.61 Z" fill="rgba(47,143,157,0.48)" data-tooltip="Underexposure-Associated Quality Gaps → Generation Derailment
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S037; S081; S105
+Evidence: A-E029; B009; B038" data-mapping="F10" data-source-logical="F10" data-target-logical="RQ1_DER"><title>Underexposure-Associated Quality Gaps → Generation Derailment
+Share of path assignments: 3.0%
+Distinct studies: 3
+Distinct evidence rows: 3
+Studies: S037; S081; S105
+Evidence: A-E029; B009; B038</title></path>
+<path id="edge-E033" class="sankey-link" d="M 1088 1110.61 C 1359.19 1110.61, 1393.81 1014.43, 1665 1014.43 L 1665 1026.55 C 1393.81 1026.55, 1359.19 1122.73, 1088 1122.73 Z" fill="rgba(128,100,162,0.48)" data-tooltip="Contamination-Associated Familiarity Differences → Correctness
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S088; S097
+Evidence: B025; C034" data-mapping="F11" data-source-logical="F11" data-target-logical="RQ1_COR"><title>Contamination-Associated Familiarity Differences → Correctness
+Share of path assignments: 2.0%
+Distinct studies: 2
+Distinct evidence rows: 2
+Studies: S088; S097
+Evidence: B025; C034</title></path>
+<path id="edge-E034" class="sankey-link" d="M 1088 1122.73 C 1359.19 1122.73, 1393.81 1156.44, 1665 1156.44 L 1665 1162.5 C 1393.81 1162.5, 1359.19 1128.79, 1088 1128.79 Z" fill="rgba(128,100,162,0.48)" data-tooltip="Contamination-Associated Familiarity Differences → Generation Derailment
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S073
+Evidence: A-E011" data-mapping="F11" data-source-logical="F11" data-target-logical="RQ1_DER"><title>Contamination-Associated Familiarity Differences → Generation Derailment
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S073
+Evidence: A-E011</title></path>
+<path id="edge-E035" class="sankey-link" d="M 1088 1167.79 C 1359.19 1167.79, 1393.81 350.21, 1665 350.21 L 1665 356.27 C 1393.81 356.27, 1359.19 1173.85, 1088 1173.85 Z" fill="rgba(255,157,167,0.48)" data-tooltip="Supervision-Signal Quality Associations → Security
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S016
+Evidence: B028" data-mapping="F07" data-source-logical="F07" data-target-logical="RQ1_SEC"><title>Supervision-Signal Quality Associations → Security
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S016
+Evidence: B028</title></path>
+<path id="edge-E036" class="sankey-link" d="M 1088 1173.85 C 1359.19 1173.85, 1393.81 591.04, 1665 591.04 L 1665 597.1 C 1393.81 597.1, 1359.19 1179.91, 1088 1179.91 Z" fill="rgba(255,157,167,0.48)" data-tooltip="Supervision-Signal Quality Associations → Understandability
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S046
+Evidence: A-E016" data-mapping="F07" data-source-logical="F07" data-target-logical="RQ1_UND"><title>Supervision-Signal Quality Associations → Understandability
+Share of path assignments: 1.0%
+Distinct studies: 1
+Distinct evidence rows: 1
+Studies: S046
+Evidence: A-E016</title></path>
+<path id="edge-E037" class="sankey-link" d="M 1088 1179.91 C 1359.19 1179.91, 1393.81 1026.55, 1665 1026.55 L 1665 1087.14 C 1393.81 1087.14, 1359.19 1240.5, 1088 1240.5 Z" fill="rgba(255,157,167,0.48)" data-tooltip="Supervision-Signal Quality Associations → Correctness
+Share of path assignments: 9.9%
+Distinct studies: 10
+Distinct evidence rows: 11
+Studies: S002; S016; S059; S060; S061; S071; S072; S090; S091; S092
+Evidence: A-E010; A-E014; A-E017; A-E024; B001; B005; B010; B028; B030; B031; B035" data-mapping="F07" data-source-logical="F07" data-target-logical="RQ1_COR"><title>Supervision-Signal Quality Associations → Correctness
+Share of path assignments: 9.9%
+Distinct studies: 10
+Distinct evidence rows: 11
+Studies: S002; S016; S059; S060; S061; S071; S072; S090; S091; S092
+Evidence: A-E010; A-E014; A-E017; A-E024; B001; B005; B010; B028; B030; B031; B035</title></path>
+  </g>
+  <g class="nodes" aria-label="Sankey nodes">
+<rect id="node-rq2-RQ2_CA_COR" class="sankey-node" x="460" y="180" width="18" height="84.83" rx="3" fill="#4C78A8" data-layer="rq2_source" data-logical="RQ2_CA_COR" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Correctness
+Share of path assignments: 13.9%
+Distinct studies: 14
+Training code samples contain syntax logical functionality API or dependency defects."><title>RQ2 training-data quality leaf: Correctness
+Share of path assignments: 13.9%
+Distinct studies: 14
+Training code samples contain syntax logical functionality API or dependency defects.</title></rect>
+<rect id="node-rq2-RQ2_CA_SEC" class="sankey-node" x="460" y="303.83" width="18" height="78.77" rx="3" fill="#4C78A8" data-layer="rq2_source" data-logical="RQ2_CA_SEC" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Security
+Share of path assignments: 12.9%
+Distinct studies: 12
+Training code samples contain vulnerabilities credentials or high-risk implementation patterns."><title>RQ2 training-data quality leaf: Security
+Share of path assignments: 12.9%
+Distinct studies: 12
+Training code samples contain vulnerabilities credentials or high-risk implementation patterns.</title></rect>
+<rect id="node-rq2-RQ2_CA_COM" class="sankey-node" x="460" y="421.6" width="18" height="18.18" rx="3" fill="#4C78A8" data-layer="rq2_source" data-logical="RQ2_CA_COM" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Compliance
+Share of path assignments: 3.0%
+Distinct studies: 3
+Training code samples violate legal ethical or regulatory requirements."><title>RQ2 training-data quality leaf: Compliance
+Share of path assignments: 3.0%
+Distinct studies: 3
+Training code samples violate legal ethical or regulatory requirements.</title></rect>
+<rect id="node-rq2-RQ2_CA_ROB" class="sankey-node" x="460" y="478.78" width="18" height="12.12" rx="3" fill="#4C78A8" data-layer="rq2_source" data-logical="RQ2_CA_ROB" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Robustness
+Share of path assignments: 2.0%
+Distinct studies: 2
+Training-code fault-tolerance, input-validation, exception-handling, or boundary-checking patterns; path-level direction and qualifiers distinguish stronger practices from deficits."><title>RQ2 training-data quality leaf: Robustness
+Share of path assignments: 2.0%
+Distinct studies: 2
+Training-code fault-tolerance, input-validation, exception-handling, or boundary-checking patterns; path-level direction and qualifiers distinguish stronger practices from deficits.</title></rect>
+<rect id="node-rq2-RQ2_CA_MAI" class="sankey-node" x="460" y="529.9" width="18" height="6.06" rx="3" fill="#4C78A8" data-layer="rq2_source" data-logical="RQ2_CA_MAI" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Maintainability
+Share of path assignments: 1.0%
+Distinct studies: 1
+Training code samples have structures that are difficult to modify extend or reuse."><title>RQ2 training-data quality leaf: Maintainability
+Share of path assignments: 1.0%
+Distinct studies: 1
+Training code samples have structures that are difficult to modify extend or reuse.</title></rect>
+<rect id="node-rq2-RQ2_CA_UND" class="sankey-node" x="460" y="574.96" width="18" height="12.12" rx="3" fill="#4C78A8" data-layer="rq2_source" data-logical="RQ2_CA_UND" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Understandability
+Share of path assignments: 2.0%
+Distinct studies: 2
+Training code samples express logic or intent unclearly."><title>RQ2 training-data quality leaf: Understandability
+Share of path assignments: 2.0%
+Distinct studies: 2
+Training code samples express logic or intent unclearly.</title></rect>
+<rect id="node-rq2-RQ2_CA_EFF" class="sankey-node" x="460" y="626.08" width="18" height="24.24" rx="3" fill="#4C78A8" data-layer="rq2_source" data-logical="RQ2_CA_EFF" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Efficiency
+Share of path assignments: 4.0%
+Distinct studies: 4
+Training code samples contain resource-wasting or algorithmically suboptimal implementations."><title>RQ2 training-data quality leaf: Efficiency
+Share of path assignments: 4.0%
+Distinct studies: 4
+Training code samples contain resource-wasting or algorithmically suboptimal implementations.</title></rect>
+<rect id="node-rq2-RQ2_NC_CSR" class="sankey-node" x="460" y="689.32" width="18" height="12.12" rx="3" fill="#F28E2B" data-layer="rq2_source" data-logical="RQ2_NC_CSR" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Compliance and Security Risks (Textual)
+Share of path assignments: 2.0%
+Distinct studies: 2
+Non-code textual training content is harmful copyright-infringing or privacy-leaking."><title>RQ2 training-data quality leaf: Compliance and Security Risks (Textual)
+Share of path assignments: 2.0%
+Distinct studies: 2
+Non-code textual training content is harmful copyright-infringing or privacy-leaking.</title></rect>
+<rect id="node-rq2-RQ2_NC_DIS" class="sankey-node" x="460" y="740.44" width="18" height="109.07" rx="3" fill="#F28E2B" data-layer="rq2_source" data-logical="RQ2_NC_DIS" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Distribution Imbalance Issues
+Share of path assignments: 17.8%
+Distinct studies: 17
+The corpus is uneven across languages domains resources data types tasks or difficulty."><title>RQ2 training-data quality leaf: Distribution Imbalance Issues
+Share of path assignments: 17.8%
+Distinct studies: 17
+The corpus is uneven across languages domains resources data types tasks or difficulty.</title></rect>
+<rect id="node-rq2-RQ2_NC_RED" class="sankey-node" x="460" y="888.5" width="18" height="18.18" rx="3" fill="#F28E2B" data-layer="rq2_source" data-logical="RQ2_NC_RED" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Redundancy Issues
+Share of path assignments: 3.0%
+Distinct studies: 3
+The corpus contains duplicate near-duplicate or excessively repetitive samples."><title>RQ2 training-data quality leaf: Redundancy Issues
+Share of path assignments: 3.0%
+Distinct studies: 3
+The corpus contains duplicate near-duplicate or excessively repetitive samples.</title></rect>
+<rect id="node-rq2-RQ2_NC_DIV" class="sankey-node" x="460" y="945.68" width="18" height="145.43" rx="3" fill="#F28E2B" data-layer="rq2_source" data-logical="RQ2_NC_DIV" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Inadequate Diversity
+Share of path assignments: 23.8%
+Distinct studies: 22
+The corpus insufficiently covers scenarios domains edge cases environments or solution forms."><title>RQ2 training-data quality leaf: Inadequate Diversity
+Share of path assignments: 23.8%
+Distinct studies: 22
+The corpus insufficiently covers scenarios domains edge cases environments or solution forms.</title></rect>
+<rect id="node-rq2-RQ2_NC_CON" class="sankey-node" x="460" y="1130.11" width="18" height="18.18" rx="3" fill="#F28E2B" data-layer="rq2_source" data-logical="RQ2_NC_CON" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Data Contamination Risks
+Share of path assignments: 3.0%
+Distinct studies: 3
+Training data overlap with evaluation benchmarks or otherwise leak test solutions."><title>RQ2 training-data quality leaf: Data Contamination Risks
+Share of path assignments: 3.0%
+Distinct studies: 3
+Training data overlap with evaluation benchmarks or otherwise leak test solutions.</title></rect>
+<rect id="node-rq2-RQ2_NC_LOW" class="sankey-node" x="460" y="1187.29" width="18" height="72.71" rx="3" fill="#F28E2B" data-layer="rq2_source" data-logical="RQ2_NC_LOW" data-mapping="" data-tooltip="RQ2 training-data quality leaf: Low-Value Data
+Share of path assignments: 11.9%
+Distinct studies: 11
+Training data contributes little useful learning signal or introduces noise and error."><title>RQ2 training-data quality leaf: Low-Value Data
+Share of path assignments: 11.9%
+Distinct studies: 11
+Training data contributes little useful learning signal or introduces noise and error.</title></rect>
+<rect id="node-mapping-F01" class="sankey-node" x="1070" y="199.5" width="18" height="84.83" rx="3" fill="#4E79A7" data-layer="mapping_family" data-logical="F01" data-mapping="F01" data-tooltip="RQ3 mapping family: Defect-Pattern Carryover
+Share of path assignments: 13.9%
+Distinct studies: 14
+Groups atomically coded relations whose final RQ2 source is a Correctness defect within code, while retaining each observed final RQ1 target branch."><title>RQ3 mapping family: Defect-Pattern Carryover
+Share of path assignments: 13.9%
+Distinct studies: 14
+Groups atomically coded relations whose final RQ2 source is a Correctness defect within code, while retaining each observed final RQ1 target branch.</title></rect>
+<rect id="node-mapping-F02" class="sankey-node" x="1070" y="323.33" width="18" height="60.59" rx="3" fill="#E15759" data-layer="mapping_family" data-logical="F02" data-mapping="F02" data-tooltip="RQ3 mapping family: Vulnerability-Pattern Carryover
+Share of path assignments: 9.9%
+Distinct studies: 10
+Groups atomically coded relations from Security defects within code to downstream non-Compliance generated-code quality problems."><title>RQ3 mapping family: Vulnerability-Pattern Carryover
+Share of path assignments: 9.9%
+Distinct studies: 10
+Groups atomically coded relations from Security defects within code to downstream non-Compliance generated-code quality problems.</title></rect>
+<rect id="node-mapping-F03" class="sankey-node" x="1070" y="422.93" width="18" height="48.48" rx="3" fill="#B07AA1" data-layer="mapping_family" data-logical="F03" data-mapping="F03" data-tooltip="RQ3 mapping family: Restricted/Sensitive-Content Reproduction Risks
+Share of path assignments: 7.9%
+Distinct studies: 6
+Groups atomically coded governance, privacy, licensing, harmful-content, and sensitive-content relations whose final generated outcome is Compliance."><title>RQ3 mapping family: Restricted/Sensitive-Content Reproduction Risks
+Share of path assignments: 7.9%
+Distinct studies: 6
+Groups atomically coded governance, privacy, licensing, harmful-content, and sensitive-content relations whose final generated outcome is Compliance.</title></rect>
+<rect id="node-mapping-F12" class="sankey-node" x="1070" y="510.4" width="18" height="12.12" rx="3" fill="#76B7B2" data-layer="mapping_family" data-logical="F12" data-mapping="F12" data-tooltip="RQ3 mapping family: Robustness-Pattern Associations
+Share of path assignments: 2.0%
+Distinct studies: 2
+Groups atomically coded relations from fault-tolerance, input-validation, exception-handling, or boundary-checking patterns in training code to generated-code Robustness or task-specific Correctness outcomes."><title>RQ3 mapping family: Robustness-Pattern Associations
+Share of path assignments: 2.0%
+Distinct studies: 2
+Groups atomically coded relations from fault-tolerance, input-validation, exception-handling, or boundary-checking patterns in training code to generated-code Robustness or task-specific Correctness outcomes.</title></rect>
+<rect id="node-mapping-F04" class="sankey-node" x="1070" y="561.52" width="18" height="6.06" rx="3" fill="#59A14F" data-layer="mapping_family" data-logical="F04" data-mapping="F04" data-tooltip="RQ3 mapping family: Structural-Quality Associations
+Share of path assignments: 1.0%
+Distinct studies: 1
+Groups atomically coded relations whose final RQ2 source is a Maintainability defect within code."><title>RQ3 mapping family: Structural-Quality Associations
+Share of path assignments: 1.0%
+Distinct studies: 1
+Groups atomically coded relations whose final RQ2 source is a Maintainability defect within code.</title></rect>
+<rect id="node-mapping-F05" class="sankey-node" x="1070" y="606.58" width="18" height="12.12" rx="3" fill="#EDC948" data-layer="mapping_family" data-logical="F05" data-mapping="F05" data-tooltip="RQ3 mapping family: Clarity-Pattern Associations
+Share of path assignments: 2.0%
+Distinct studies: 2
+Groups atomically coded relations whose final RQ2 source is an Understandability defect within code."><title>RQ3 mapping family: Clarity-Pattern Associations
+Share of path assignments: 2.0%
+Distinct studies: 2
+Groups atomically coded relations whose final RQ2 source is an Understandability defect within code.</title></rect>
+<rect id="node-mapping-F06" class="sankey-node" x="1070" y="657.7" width="18" height="24.24" rx="3" fill="#F28E2B" data-layer="mapping_family" data-logical="F06" data-mapping="F06" data-tooltip="RQ3 mapping family: Efficiency-Pattern Carryover
+Share of path assignments: 4.0%
+Distinct studies: 4
+Groups atomically coded relations whose final RQ2 source is an Efficiency defect within code."><title>RQ3 mapping family: Efficiency-Pattern Carryover
+Share of path assignments: 4.0%
+Distinct studies: 4
+Groups atomically coded relations whose final RQ2 source is an Efficiency defect within code.</title></rect>
+<rect id="node-mapping-F09" class="sankey-node" x="1070" y="720.94" width="18" height="109.07" rx="3" fill="#9C755F" data-layer="mapping_family" data-logical="F09" data-mapping="F09" data-tooltip="RQ3 mapping family: Prevalence-Associated Quality Skew
+Share of path assignments: 17.8%
+Distinct studies: 17
+Groups atomically coded relations from relative prevalence, representation, allocation, or distribution mismatch in the training data."><title>RQ3 mapping family: Prevalence-Associated Quality Skew
+Share of path assignments: 17.8%
+Distinct studies: 17
+Groups atomically coded relations from relative prevalence, representation, allocation, or distribution mismatch in the training data.</title></rect>
+<rect id="node-mapping-F08" class="sankey-node" x="1070" y="869" width="18" height="18.18" rx="3" fill="#79706E" data-layer="mapping_family" data-logical="F08" data-mapping="F08" data-tooltip="RQ3 mapping family: Redundancy-Associated Reinforcement and Degeneration
+Share of path assignments: 3.0%
+Distinct studies: 3
+Groups atomically coded relations from duplicate, cloned, or highly similar samples within the training corpus."><title>RQ3 mapping family: Redundancy-Associated Reinforcement and Degeneration
+Share of path assignments: 3.0%
+Distinct studies: 3
+Groups atomically coded relations from duplicate, cloned, or highly similar samples within the training corpus.</title></rect>
+<rect id="node-mapping-F10" class="sankey-node" x="1070" y="926.18" width="18" height="145.43" rx="3" fill="#2F8F9D" data-layer="mapping_family" data-logical="F10" data-mapping="F10" data-tooltip="RQ3 mapping family: Underexposure-Associated Quality Gaps
+Share of path assignments: 23.8%
+Distinct studies: 22
+Groups atomically coded relations from missing or insufficient task, domain, language, API, temporal, security, performance, or format coverage."><title>RQ3 mapping family: Underexposure-Associated Quality Gaps
+Share of path assignments: 23.8%
+Distinct studies: 22
+Groups atomically coded relations from missing or insufficient task, domain, language, API, temporal, security, performance, or format coverage.</title></rect>
+<rect id="node-mapping-F11" class="sankey-node" x="1070" y="1110.61" width="18" height="18.18" rx="3" fill="#8064A2" data-layer="mapping_family" data-logical="F11" data-mapping="F11" data-tooltip="RQ3 mapping family: Contamination-Associated Familiarity Differences
+Share of path assignments: 3.0%
+Distinct studies: 3
+Groups atomically coded relations from verified or explicitly qualified potential overlap between training data and evaluation material."><title>RQ3 mapping family: Contamination-Associated Familiarity Differences
+Share of path assignments: 3.0%
+Distinct studies: 3
+Groups atomically coded relations from verified or explicitly qualified potential overlap between training data and evaluation material.</title></rect>
+<rect id="node-mapping-F07" class="sankey-node" x="1070" y="1167.79" width="18" height="72.71" rx="3" fill="#FF9DA7" data-layer="mapping_family" data-logical="F07" data-mapping="F07" data-tooltip="RQ3 mapping family: Supervision-Signal Quality Associations
+Share of path assignments: 11.9%
+Distinct studies: 11
+Groups atomically coded relations from noisy, erroneous, low-information, irrelevant, malformed, or misaligned non-code supervision."><title>RQ3 mapping family: Supervision-Signal Quality Associations
+Share of path assignments: 11.9%
+Distinct studies: 11
+Groups atomically coded relations from noisy, erroneous, low-information, irrelevant, malformed, or misaligned non-code supervision.</title></rect>
+<rect id="node-rq1-RQ1_SEC" class="sankey-node" x="1665" y="277.5" width="18" height="78.77" rx="3" fill="#5F6B76" data-layer="rq1_target" data-logical="RQ1_SEC" data-mapping="" data-tooltip="RQ1 generated-code quality dimension: Security
+Share of path assignments: 12.9%
+Distinct studies: 13
+Generated code contains weaknesses permitting unauthorized access disclosure alteration or unsafe execution."><title>RQ1 generated-code quality dimension: Security
+Share of path assignments: 12.9%
+Distinct studies: 13
+Generated code contains weaknesses permitting unauthorized access disclosure alteration or unsafe execution.</title></rect>
+<rect id="node-rq1-RQ1_COM" class="sankey-node" x="1665" y="395.27" width="18" height="48.48" rx="3" fill="#5F6B76" data-layer="rq1_target" data-logical="RQ1_COM" data-mapping="" data-tooltip="RQ1 generated-code quality dimension: Compliance
+Share of path assignments: 7.9%
+Distinct studies: 6
+Generated code violates legal ethical or regulatory constraints."><title>RQ1 generated-code quality dimension: Compliance
+Share of path assignments: 7.9%
+Distinct studies: 6
+Generated code violates legal ethical or regulatory constraints.</title></rect>
+<rect id="node-rq1-RQ1_ROB" class="sankey-node" x="1665" y="482.75" width="18" height="6.06" rx="3" fill="#5F6B76" data-layer="rq1_target" data-logical="RQ1_ROB" data-mapping="" data-tooltip="RQ1 generated-code quality dimension: Robustness
+Share of path assignments: 1.0%
+Distinct studies: 1
+Generated code cannot remain stable under abnormal inputs boundary conditions or non-malicious runtime disruptions."><title>RQ1 generated-code quality dimension: Robustness
+Share of path assignments: 1.0%
+Distinct studies: 1
+Generated code cannot remain stable under abnormal inputs boundary conditions or non-malicious runtime disruptions.</title></rect>
+<rect id="node-rq1-RQ1_MAI" class="sankey-node" x="1665" y="527.81" width="18" height="12.12" rx="3" fill="#5F6B76" data-layer="rq1_target" data-logical="RQ1_MAI" data-mapping="" data-tooltip="RQ1 generated-code quality dimension: Maintainability
+Share of path assignments: 2.0%
+Distinct studies: 2
+Generated code is difficult to modify extend or reuse without introducing risk."><title>RQ1 generated-code quality dimension: Maintainability
+Share of path assignments: 2.0%
+Distinct studies: 2
+Generated code is difficult to modify extend or reuse without introducing risk.</title></rect>
+<rect id="node-rq1-RQ1_UND" class="sankey-node" x="1665" y="578.93" width="18" height="18.18" rx="3" fill="#5F6B76" data-layer="rq1_target" data-logical="RQ1_UND" data-mapping="" data-tooltip="RQ1 generated-code quality dimension: Understandability
+Share of path assignments: 3.0%
+Distinct studies: 3
+Humans have difficulty comprehending the generated code&#x27;s logic intent or structure."><title>RQ1 generated-code quality dimension: Understandability
+Share of path assignments: 3.0%
+Distinct studies: 3
+Humans have difficulty comprehending the generated code&#x27;s logic intent or structure.</title></rect>
+<rect id="node-rq1-RQ1_EFF" class="sankey-node" x="1665" y="636.1" width="18" height="42.42" rx="3" fill="#5F6B76" data-layer="rq1_target" data-logical="RQ1_EFF" data-mapping="" data-tooltip="RQ1 generated-code quality dimension: Efficiency
+Share of path assignments: 6.9%
+Distinct studies: 6
+Generated code unnecessarily consumes time or memory resources."><title>RQ1 generated-code quality dimension: Efficiency
+Share of path assignments: 6.9%
+Distinct studies: 6
+Generated code unnecessarily consumes time or memory resources.</title></rect>
+<rect id="node-rq1-RQ1_COR" class="sankey-node" x="1665" y="717.52" width="18" height="369.62" rx="3" fill="#5F6B76" data-layer="rq1_target" data-logical="RQ1_COR" data-mapping="" data-tooltip="RQ1 generated-code quality dimension: Correctness
+Share of path assignments: 60.4%
+Distinct studies: 48
+Generated code fails to implement intended semantics or to execute validly."><title>RQ1 generated-code quality dimension: Correctness
+Share of path assignments: 60.4%
+Distinct studies: 48
+Generated code fails to implement intended semantics or to execute validly.</title></rect>
+<rect id="node-rq1-RQ1_DER" class="sankey-node" x="1665" y="1126.14" width="18" height="36.36" rx="3" fill="#5F6B76" data-layer="rq1_target" data-logical="RQ1_DER" data-mapping="" data-tooltip="RQ1 generated-code quality dimension: Generation Derailment
+Share of path assignments: 5.9%
+Distinct studies: 5
+The generated response departs from the task-directed course needed to provide a usable code deliverable."><title>RQ1 generated-code quality dimension: Generation Derailment
+Share of path assignments: 5.9%
+Distinct studies: 5
+The generated response departs from the task-directed course needed to provide a usable code deliverable.</title></rect>
+  </g>
+  <g class="labels" aria-label="Node labels">
+<text class="node-label" x="445" y="230.42" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_CA_COR" data-mapping="">Correctness (13.9%)</text>
+<text class="node-label" x="445" y="351.22" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_CA_SEC" data-mapping="">Security (12.9%)</text>
+<text class="node-label" x="445" y="438.69" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_CA_COM" data-mapping="">Compliance (3.0%)</text>
+<text class="node-label" x="445" y="492.84" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_CA_ROB" data-mapping="">Robustness (2.0%)</text>
+<text class="node-label" x="445" y="540.93" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_CA_MAI" data-mapping="">Maintainability (1.0%)</text>
+<text class="node-label" x="445" y="589.02" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_CA_UND" data-mapping="">Understandability (2.0%)</text>
+<text class="node-label" x="445" y="646.2" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_CA_EFF" data-mapping="">Efficiency (4.0%)</text>
+<text class="node-label" x="445" y="703.38" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_NC_CSR" data-mapping="">Compliance and Security Risks (Textual) (2.0%)</text>
+<text class="node-label" x="445" y="802.97" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_NC_DIS" data-mapping="">Distribution imbalance (17.8%)</text>
+<text class="node-label" x="445" y="905.59" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_NC_RED" data-mapping="">Redundancy (3.0%)</text>
+<text class="node-label" x="445" y="1026.4" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_NC_DIV" data-mapping="">Inadequate diversity (23.8%)</text>
+<text class="node-label" x="445" y="1147.2" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_NC_CON" data-mapping="">Contamination (3.0%)</text>
+<text class="node-label" x="445" y="1231.64" text-anchor="end" data-layer="rq2_source" data-logical="RQ2_NC_LOW" data-mapping="">Low-value data (11.9%)</text>
+<text class="node-label mapping-label" x="1098" y="249.92" text-anchor="start" data-layer="mapping_family" data-logical="F01" data-mapping="F01">Defect Carryover (13.9%)</text>
+<text class="node-label mapping-label" x="1098" y="361.63" text-anchor="start" data-layer="mapping_family" data-logical="F02" data-mapping="F02">Vulnerability Carryover (9.9%)</text>
+<text class="node-label mapping-label" x="1098" y="455.16" text-anchor="start" data-layer="mapping_family" data-logical="F03" data-mapping="F03">Content Reproduction Risks (7.9%)</text>
+<text class="node-label mapping-label" x="1098" y="524.46" text-anchor="start" data-layer="mapping_family" data-logical="F12" data-mapping="F12">Robustness Patterns (2.0%)</text>
+<text class="node-label mapping-label" x="1098" y="572.55" text-anchor="start" data-layer="mapping_family" data-logical="F04" data-mapping="F04">Structural Quality (1.0%)</text>
+<text class="node-label mapping-label" x="1098" y="620.64" text-anchor="start" data-layer="mapping_family" data-logical="F05" data-mapping="F05">Clarity Patterns (2.0%)</text>
+<text class="node-label mapping-label" x="1098" y="677.82" text-anchor="start" data-layer="mapping_family" data-logical="F06" data-mapping="F06">Efficiency Carryover (4.0%)</text>
+<text class="node-label mapping-label" x="1098" y="783.47" text-anchor="start" data-layer="mapping_family" data-logical="F09" data-mapping="F09">Prevalence Quality Skew (17.8%)</text>
+<text class="node-label mapping-label" x="1098" y="886.09" text-anchor="start" data-layer="mapping_family" data-logical="F08" data-mapping="F08">Redundancy Reinforcement (3.0%)</text>
+<text class="node-label mapping-label" x="1098" y="1006.9" text-anchor="start" data-layer="mapping_family" data-logical="F10" data-mapping="F10">Underexposure Gaps (23.8%)</text>
+<text class="node-label mapping-label" x="1098" y="1127.7" text-anchor="start" data-layer="mapping_family" data-logical="F11" data-mapping="F11">Contamination Familiarity (3.0%)</text>
+<text class="node-label mapping-label" x="1098" y="1212.14" text-anchor="start" data-layer="mapping_family" data-logical="F07" data-mapping="F07">Supervision Signal Quality (11.9%)</text>
+<text class="node-label" x="1698" y="324.89" text-anchor="start" data-layer="rq1_target" data-logical="RQ1_SEC" data-mapping="">Security (12.9%)</text>
+<text class="node-label" x="1698" y="427.51" text-anchor="start" data-layer="rq1_target" data-logical="RQ1_COM" data-mapping="">Compliance (7.9%)</text>
+<text class="node-label" x="1698" y="493.78" text-anchor="start" data-layer="rq1_target" data-logical="RQ1_ROB" data-mapping="">Robustness (1.0%)</text>
+<text class="node-label" x="1698" y="541.87" text-anchor="start" data-layer="rq1_target" data-logical="RQ1_MAI" data-mapping="">Maintainability (2.0%)</text>
+<text class="node-label" x="1698" y="596.01" text-anchor="start" data-layer="rq1_target" data-logical="RQ1_UND" data-mapping="">Understandability (3.0%)</text>
+<text class="node-label" x="1698" y="665.31" text-anchor="start" data-layer="rq1_target" data-logical="RQ1_EFF" data-mapping="">Efficiency (6.9%)</text>
+<text class="node-label" x="1698" y="910.33" text-anchor="start" data-layer="rq1_target" data-logical="RQ1_COR" data-mapping="">Correctness (60.4%)</text>
+<text class="node-label long-target-label" x="1698" y="1152.32" text-anchor="start" data-layer="rq1_target" data-logical="RQ1_DER" data-mapping="">Generation derailment (5.9%)</text>
+  </g>
+
+  <g class="legend" aria-label="Color legend">
+    <rect x="90" y="1305" width="18" height="18" rx="3" fill="#4C78A8"/>
+    <text x="118" y="1321">RQ2 code-attribute leaf</text>
+    <rect x="460" y="1305" width="18" height="18" rx="3" fill="#F28E2B"/>
+    <text x="488" y="1321">RQ2 non-code/corpus leaf</text>
+    <rect x="865" y="1305" width="18" height="18" rx="3" fill="#7B8792"/>
+    <text x="893" y="1321">Band color identifies mapping family</text>
+    <rect x="1395" y="1305" width="18" height="18" rx="3" fill="#5F6B76"/>
+    <text x="1423" y="1321">RQ1 generated-code dimension</text>
+  </g>
+  <text class="footnote" x="1025" y="1353" text-anchor="middle">Band widths and percentages use path assignments; one study may support multiple paths.</text>
+
+</svg>
+</div>
+  <div class="interactive-note">Hover a band or node to inspect counts, study coverage, evidence coverage, and definitions. Hovering also highlights the corresponding mapping family. This file is self-contained and makes no network requests.</div>
+  <div id="tooltip" role="status" aria-live="polite"></div>
+  <script>
+  (() => {
+    const tooltip = document.getElementById('tooltip');
+    const links = [...document.querySelectorAll('.sankey-link')];
+    const nodes = [...document.querySelectorAll('.sankey-node')];
+    const labels = [...document.querySelectorAll('.node-label')];
+    const interactive = [...links, ...nodes];
+
+    function related(element, candidate) {
+      const mapping = element.dataset.mapping;
+      if (mapping) {
+        return candidate.dataset.mapping === mapping || candidate.dataset.logical === mapping;
+      }
+      const logical = element.dataset.logical;
+      if (!logical) return false;
+      return candidate.dataset.sourceLogical === logical || candidate.dataset.targetLogical === logical || candidate.dataset.logical === logical;
+    }
+
+    function highlight(element) {
+      [...links, ...nodes, ...labels].forEach(item => {
+        const isRelated = item === element || related(element, item);
+        item.classList.toggle('is-highlighted', isRelated);
+        item.classList.toggle('is-dimmed', !isRelated);
+      });
+    }
+
+    function clearHighlight() {
+      [...links, ...nodes, ...labels].forEach(item => item.classList.remove('is-highlighted', 'is-dimmed'));
+    }
+
+    function positionTooltip(event) {
+      const pad = 18;
+      const rect = tooltip.getBoundingClientRect();
+      let left = event.clientX + pad;
+      let top = event.clientY + pad;
+      if (left + rect.width > window.innerWidth - 8) left = event.clientX - rect.width - pad;
+      if (top + rect.height > window.innerHeight - 8) top = event.clientY - rect.height - pad;
+      tooltip.style.left = `${Math.max(8, left)}px`;
+      tooltip.style.top = `${Math.max(8, top)}px`;
+    }
+
+    interactive.forEach(element => {
+      element.addEventListener('mouseenter', event => {
+        tooltip.textContent = element.dataset.tooltip || '';
+        tooltip.style.display = 'block';
+        highlight(element);
+        positionTooltip(event);
+      });
+      element.addEventListener('mousemove', positionTooltip);
+      element.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+        clearHighlight();
+      });
+    });
+    window.__SANKEY_READY__ = true;
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% for study in site.data.included_studies %}
+{% if include.study_ids contains study.study_id %}
+<div class="paper-card" id="{{ study.study_id }}">
+  <div class="paper-title">{{ study.short_title | escape }}</div>
+  <div class="paper-subtitle">{{ study.title | escape }}</div>
+  <div class="paper-meta"><span class="paper-tag">{{ study.study_id }} · {{ study.publication_date | escape }}</span><a href="{{ study.url | escape }}" class="paper-link" target="_blank" rel="noopener noreferrer">View Paper ↗</a></div>
+</div>
+{% endif %}
+{% endfor %}

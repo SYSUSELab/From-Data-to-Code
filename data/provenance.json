@@ -1,0 +1,160 @@
+{
+  "source_commit": "2b556a1aebfccffaef4e99ea448a880c5d800ee6",
+  "source_snapshot_note": "Major-revision manuscript and final result tables; current publication status is frozen at 2026-08-29.",
+  "transformations": [
+    "Project final tables into an English-only result package.",
+    "Keep the 105 evidence rows linked to the 101 frozen assignments.",
+    "Derive final per-paper graph participation from those assignments; do not publish unresolved initial screening checkpoints.",
+    "Extract method memberships from final manuscript taxonomy figures.",
+    "Render existing manuscript PDF figures without changing their contents."
+  ],
+  "files": [
+    {
+      "file": "data/included_studies.csv",
+      "source": "data/sankey_new/study_manifest.csv",
+      "source_sha256": "c87b25dd1c39a00d732a89620cb82859f0b6d6df91f604a7c9f1c45f7d332d44"
+    },
+    {
+      "file": "data/quality_scores_for_included_papers.csv",
+      "source": "data/paper_collection/quality_scores_for_included_papers.csv",
+      "source_sha256": "10a2d5dfd80352df49489d95e7ebcb2efd5b847af4e6ebf64f71971eeb7ec1ba"
+    },
+    {
+      "file": "data/rater_scores.csv",
+      "source": "data/paper_collection/rater_scores.csv",
+      "source_sha256": "88a1cebb6248e1389e300f830a93298ced7803f46a633a32df4305206dbbbd8d"
+    },
+    {
+      "file": "data/search_summary.csv",
+      "source": "Bridging-Generation-and-Training/sections/methodology.tex",
+      "source_sha256": "02bc785725955a108b48d06a9d072edb5c0dc1be4b9e56b2b7c6c741ad86fe42"
+    },
+    {
+      "file": "data/rq1_code_quality.csv",
+      "source": "data/bubble_chart/quality_bubble_chart_data.csv",
+      "source_sha256": "bff1c21f9044f9beca81d9b758a0b0c9f779ec55af1a86d3bac0bf020e087493"
+    },
+    {
+      "file": "data/rq2_data_quality.csv",
+      "source": "data/bubble_chart/data_issues_bubble_chart_data.csv",
+      "source_sha256": "5738eb2cf34a37a4161ceed40be0a78e82df76cc2002e87a05d50c39778a3cd1"
+    },
+    {
+      "file": "data/rq3/study_mapping_assignments.csv",
+      "source": "data/sankey_new/study_mapping_assignments.csv",
+      "source_sha256": "061f3658ba88038b9a035147ad4b36e3b0820e1d3f232e53637670b796e5cfcb"
+    },
+    {
+      "file": "data/rq3/path_evidence_links.csv",
+      "source": "data/sankey_new/path_evidence_links.csv",
+      "source_sha256": "00c5b071e37ea67e0626244fbee2e4fda09bfdbf613764086bc03000131c294b"
+    },
+    {
+      "file": "data/rq3/relationship_evidence.csv",
+      "source": "data/sankey_new/relationship_evidence.csv",
+      "source_sha256": "dc4cfb66431922aa31a03f6bfc130a4416e2ecec91a3cf89940bc83e09818419"
+    },
+    {
+      "file": "data/rq3/study_screening.csv",
+      "source": "data/sankey_new/study_mapping_assignments.csv",
+      "source_sha256": "061f3658ba88038b9a035147ad4b36e3b0820e1d3f232e53637670b796e5cfcb"
+    },
+    {
+      "file": "data/rq3/mapping_definitions.csv",
+      "source": "data/sankey_new/mapping_definitions.csv",
+      "source_sha256": "931571cd1039514ada1dc549a4708b47152cb8ccce181160d0ed3f1df777a604"
+    },
+    {
+      "file": "data/rq3/taxonomy_codebook.csv",
+      "source": "data/sankey_new/taxonomy_codebook.csv",
+      "source_sha256": "67a20d55e1cff47b9a5d95b38c53b96e9b78417a44170105b59170d0df749f37"
+    },
+    {
+      "file": "data/rq3/mapping_summary.csv",
+      "source": "data/sankey_new/mapping_summary.csv",
+      "source_sha256": "6c82b3c82f1f8ac9f2c430d9bb6ca4de2298bb93b79a442b4ef928648dbd14a9"
+    },
+    {
+      "file": "data/rq3/sankey_atomic_branches.csv",
+      "source": "data/sankey_new/sankey_atomic_branches.csv",
+      "source_sha256": "8a5f00f9988770fdea84ca6324fb0400009bfa39a311e905bcc38aa25c3c9657"
+    },
+    {
+      "file": "data/rq3/sankey_nodes.csv",
+      "source": "data/sankey_new/sankey_nodes.csv",
+      "source_sha256": "a950fe8c9542aa332c998839d4806c0f3053026c0c94b4c14066a95ce987543d"
+    },
+    {
+      "file": "data/rq3/sankey_edges.csv",
+      "source": "data/sankey_new/sankey_edges.csv",
+      "source_sha256": "36b4c31d4f176d4b9a5f0018c98ac94ebd4c673c39eaf19e0ce5f1b85bf63b60"
+    },
+    {
+      "file": "data/rq3/mapping_arrow_labels.csv",
+      "source": "data/sankey_new/mapping_arrow_labels.csv",
+      "source_sha256": "3d4bad5d5353276e09298a022ba3a95ffd1680dca18df5cf554d75a655664c5d"
+    },
+    {
+      "file": "data/rq3/sankey_left_nodes.csv",
+      "source": "data/sankey_new/sankey_left_nodes.csv",
+      "source_sha256": "120e8f0ec6661d962fbe2f2951a7e4cc8761403b06f16e7029470efb572df0c6"
+    },
+    {
+      "file": "data/rq3/sankey_left_edges.csv",
+      "source": "data/sankey_new/sankey_left_edges.csv",
+      "source_sha256": "2e527d379781491695759e5f6b8eea736f18c58bfc8a4383f1bc93bf6e676a15"
+    },
+    {
+      "file": "data/rq3/sankey_right_nodes.csv",
+      "source": "data/sankey_new/sankey_right_nodes.csv",
+      "source_sha256": "9f67a142a8e15e9cecdf5ce6d9768c85c951fdc572c4d2e4978adae665e5477f"
+    },
+    {
+      "file": "data/rq3/sankey_right_edges.csv",
+      "source": "data/sankey_new/sankey_right_edges.csv",
+      "source_sha256": "f11b504ed8a99de9bf27b2962a11322f2cb8fc86c66fc59b3ca3a83a8adfb60a"
+    },
+    {
+      "file": "data/rq3/mapping_panel_alignment.csv",
+      "source": "data/sankey_new/mapping_panel_alignment.csv",
+      "source_sha256": "b0b852f49e3e0ed80c831d8666612f520fdf8e54997fb6232d16773b16ca6d7d"
+    },
+    {
+      "file": "data/automation_examples.csv",
+      "source": "data/rq4_rq5/broad_issue_automation_examples.csv",
+      "source_sha256": "fec24dd4792faed3f0e0f5a8e47a4892d6ff7451629979b469badec983c2cac2"
+    },
+    {
+      "file": "data/sensitivity/publication_status.csv",
+      "source": "data/author_overlap_audit/studies.csv",
+      "source_sha256": "0ae12350c60cbb7150e55fc6cbd214270edbf09ca38fe345a63b9258b5d2a699"
+    },
+    {
+      "file": "data/sensitivity/claim_dependency.csv",
+      "source": "data/author_overlap_audit/claim_dependency.csv",
+      "source_sha256": "0d6d290d495a53c8b414f663ffb1aa6d246aee5956c161f61948275b16d998a0"
+    },
+    {
+      "file": "data/sensitivity/method_leaf_sensitivity.csv",
+      "source": "data/author_overlap_audit/method_leaf_sensitivity.csv",
+      "source_sha256": "fd2f33a546fefbca87d739de7dd3e7ab024a5fb42bfcafe5b647c161d7b5c640"
+    },
+    {
+      "file": "data/sensitivity/peer_reviewed_automation_replacements.csv",
+      "source": "data/author_overlap_audit/peer_reviewed_automation_replacements.csv",
+      "source_sha256": "9d61521ac171fd1a2a9e7389da0c97f23f98ce40de9b9b414328bc7ee63230d0"
+    }
+  ],
+  "metadata_corrections": [
+    {
+      "study_id": "S008",
+      "fields": [
+        "url",
+        "publication_date",
+        "quarter"
+      ],
+      "correction": "Use DOI 10.1145/3524842.3528470 and May 2022, as printed on the included ACM paper and in manuscript bibliography key 10. The source register had a page-title string in its URL field and January 2025 as its date; the two RQ1 plotting memberships use the corrected date. Category membership and counts are unchanged.",
+      "evidence_url": "https://doi.org/10.1145/3524842.3528470"
+    }
+  ]
+}

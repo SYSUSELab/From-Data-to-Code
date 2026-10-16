@@ -19,8 +19,6 @@ vendor/bundle/
 .agents/
 .local/
 
-# Generated helper output
-/scripts/
 
 # Logs and temporary files
 *.log

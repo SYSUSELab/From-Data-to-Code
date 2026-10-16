@@ -1,0 +1,14 @@
+stage,source,records,scope_or_note
+database_search,IEEE Xplore,380,All Metadata; publication cutoff 2025-12-31
+database_search,ACM Digital Library,155,Title + Abstract + Author Keywords; publication cutoff 2025-12-31
+database_search,SpringerLink,824,Keywords; publication cutoff 2025-12-31
+database_search,ScienceDirect,26,"Title, abstract or author-specified keywords; publication cutoff 2025-12-31"
+database_search,arXiv,913,Title + abstract; publication cutoff 2025-12-31
+retrieved_total,All databases,2298,Total before deduplication
+duplicates_removed,All databases,184,Consolidation and deduplication
+unique_records,All databases,2114,After deduplication
+eligible_after_screening,"Title, abstract and full text",122,Eligible seeds for snowballing
+snowballing_added,Backward and forward snowballing,12,Completed 2026-02; includes four preprints first posted in 2026-01 or 2026-02
+quality_assessment_candidates,Eligible candidates,134,Three independent total scores per candidate; maximum 16
+excluded_by_quality_threshold,Consensus assessment,20,Consensus total below 10
+included_papers,Final synthesis,114,Consensus total at least 10 of 16
