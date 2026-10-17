@@ -818,7 +818,8 @@ td {
 
 .main-content .reading-content > h1 {
   // Just the Docs sets heading sizes with !important in its typography mixin.
-  font-size: clamp(2.1rem, 1.65rem + 0.9vw, 2.8rem) !important;
+  // calc() keeps mixed units in browser math for GitHub Pages' Ruby Sass compiler.
+  font-size: clamp(2.1rem, calc(1.65rem + 0.9vw), 2.8rem) !important;
   letter-spacing: -0.02em;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -826,7 +827,7 @@ td {
 
 .main-content .reading-content > h2 {
   border-top: 1px solid var(--border-color);
-  font-size: clamp(1.75rem, 1.4rem + 0.75vw, 2.15rem) !important;
+  font-size: clamp(1.75rem, calc(1.4rem + 0.75vw), 2.15rem) !important;
   letter-spacing: -0.015em;
   line-height: 1.25;
   margin-top: 3.6rem;
