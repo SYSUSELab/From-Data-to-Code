@@ -21,15 +21,11 @@ Mitigation can act during dataset construction, model training, or generation. T
 
 ## Generated-code mitigation
 
-![Model adaptation and generation-time interventions organized by lifecycle stage]({{ '/images/generated_code_issues_mitigation.svg' | relative_url }})
-
 Data-level mitigation is detailed in the next section. Its effect on generated code requires training and held-out output evaluation.
 
 {% include method_table.html scope='generated_code_mitigation' %}
 
 ## Training-data mitigation
-
-![Training-data mitigation grouped into filtering, mixture design, enhancement, and augmentation]({{ '/images/data_quality_issues_mitigation.svg' | relative_url }})
 
 {% include method_table.html scope='training_data_mitigation' %}
 
@@ -53,4 +49,15 @@ Begin with deterministic checks, add execution and stress testing where an oracl
 {% assign data_methods = site.data.method_assignments | where: 'taxonomy_scope', 'training_data_mitigation' %}
 {% assign mitigation_rows = code_methods | concat: data_methods %}
 {% assign mitigation_ids = mitigation_rows | map: 'study_id' | uniq %}
-{% include study_list.html study_ids=mitigation_ids %}
+
+Browse **{{ mitigation_ids.size }} distinct papers** by mitigation method, separated by the artifact being changed. Expand a method to see its taxonomy path and supporting papers, or select its paper count in the tables above. Membership is multi-label: a paper can appear under several methods. The [paper–method memberships]({{ '/data/method_assignments.csv' | relative_url }}) retain the exact assignments.
+
+### Generated-code mitigation
+
+{% assign code_categories = site.data.method_taxonomy | where: 'taxonomy_scope', 'generated_code_mitigation' %}
+{% include supporting_papers.html categories=code_categories memberships=code_methods match_key='method_id' membership_key='method_id' id_key='method_id' label_key='method_leaf' context_key='method_path' %}
+
+### Training-data mitigation
+
+{% assign data_categories = site.data.method_taxonomy | where: 'taxonomy_scope', 'training_data_mitigation' %}
+{% include supporting_papers.html categories=data_categories memberships=data_methods match_key='method_id' membership_key='method_id' id_key='method_id' label_key='method_leaf' context_key='method_path' %}

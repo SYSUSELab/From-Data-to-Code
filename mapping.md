@@ -25,10 +25,10 @@ One assignment is a unique **(paper, relationship family, RQ2 source, RQ1 outcom
 
 | Family | Assignments | Share | Papers |
 |:---|---:|---:|---:|
-{% for row in site.data.rq3.mapping_summary %}| {{ row.mapping_id }}: {{ row.mapping_label }} | {{ row.n_path_assignments }} | {{ row.percentage_of_path_assignments }}% | {{ row.n_distinct_studies }} |
+{% for row in site.data.rq3.mapping_summary %}| {{ row.mapping_id }}: {{ row.mapping_label }} | {{ row.n_path_assignments }} | {{ row.percentage_of_path_assignments }}% | [{{ row.n_distinct_studies }}](#papers-{{ row.mapping_id | downcase }}) |
 {% endfor %}
 
-See the [operational definitions]({{ '/data/rq3/mapping_definitions.csv' | relative_url }}) for routing rules and boundaries, and the [assignment table]({{ '/data/rq3/study_mapping_assignments.csv' | relative_url }}) for individual paths. Rounded shares can sum to 99.99%.
+Select a paper count to open that family's supporting papers. See the [operational definitions]({{ '/data/rq3/mapping_definitions.csv' | relative_url }}) for routing rules and boundaries, and the [assignment table]({{ '/data/rq3/study_mapping_assignments.csv' | relative_url }}) for individual paths. Rounded shares can sum to 99.99%.
 
 ## What the distribution supports
 
@@ -39,4 +39,7 @@ The evidence supports examining example quality, input–target alignment, and c
 ## Supporting papers
 
 {% assign mapping_ids = site.data.rq3.study_mapping_assignments | map: 'study_id' | uniq %}
-{% include study_list.html study_ids=mapping_ids %}
+
+Browse **{{ mapping_ids.size }} distinct papers** by relationship family. Each group contains distinct papers, even when a paper contributes several paths within that family. A paper can appear in several families; group counts are not additive. Stable study IDs trace back to the [assignment table]({{ '/data/rq3/study_mapping_assignments.csv' | relative_url }}) and its evidence links.
+
+{% include supporting_papers.html categories=site.data.rq3.mapping_summary memberships=site.data.rq3.study_mapping_assignments match_key='mapping_id' membership_key='mapping_id' id_key='mapping_id' label_key='mapping_label' show_code=true %}

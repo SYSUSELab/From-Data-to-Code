@@ -20,13 +20,13 @@ Detection depends on the artifact, available oracle, language, and deployment co
 
 ## Generated-code detection
 
-![Generated-code detection grouped into execution, static and human analysis, and model-based methods]({{ '/images/generated_code_issues_detection.svg' | relative_url }})
+{% include research_figure.html src='/images/generated_code_issues_detection.svg' height=729 alt='Generated-code detection grouped into execution, static and human analysis, and model-based methods' caption='Generated-code detection methods. A paper can support several methods.' %}
 
 {% include method_table.html scope='generated_code_detection' %}
 
 ## Training-data detection
 
-![Training-data detection grouped into execution, static and corpus audits, and model-based methods]({{ '/images/data_quality_issues_detection.svg' | relative_url }})
+{% include research_figure.html src='/images/data_quality_issues_detection.svg' height=787 alt='Training-data detection grouped into execution, static and corpus audits, and model-based methods' caption='Training-data detection methods. A paper can support several methods.' %}
 
 {% include method_table.html scope='training_data_detection' %}
 
@@ -42,4 +42,15 @@ Human work remains in constructing rules, tests, labels, prompts, and thresholds
 {% assign data_methods = site.data.method_assignments | where: 'taxonomy_scope', 'training_data_detection' %}
 {% assign detection_rows = code_methods | concat: data_methods %}
 {% assign detection_ids = detection_rows | map: 'study_id' | uniq %}
-{% include study_list.html study_ids=detection_ids %}
+
+Browse **{{ detection_ids.size }} distinct papers** by detection method, separated by the artifact being checked. Expand a method to see its taxonomy path and supporting papers, or select its paper count in the tables above. Membership is multi-label: a paper can appear under several methods. The [paper–method memberships]({{ '/data/method_assignments.csv' | relative_url }}) retain the exact assignments.
+
+### Generated-code detection
+
+{% assign code_categories = site.data.method_taxonomy | where: 'taxonomy_scope', 'generated_code_detection' %}
+{% include supporting_papers.html categories=code_categories memberships=code_methods match_key='method_id' membership_key='method_id' id_key='method_id' label_key='method_leaf' context_key='method_path' %}
+
+### Training-data detection
+
+{% assign data_categories = site.data.method_taxonomy | where: 'taxonomy_scope', 'training_data_detection' %}
+{% include supporting_papers.html categories=data_categories memberships=data_methods match_key='method_id' membership_key='method_id' id_key='method_id' label_key='method_leaf' context_key='method_path' %}

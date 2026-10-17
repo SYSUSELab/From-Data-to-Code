@@ -1,0 +1,8 @@
+<figure class="figure-block figure-block--overview">
+  <div class="figure-frame figure-frame--overview">
+    <a href="{{ include.src | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size figure: {{ include.alt | escape }}">
+      <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}" width="1200" height="{{ include.height }}" loading="lazy" decoding="async">
+    </a>
+  </div>
+  <figcaption class="figure-caption">{{ include.caption | escape }} <a href="{{ include.src | relative_url }}" target="_blank" rel="noopener noreferrer">View full-size figure ↗</a></figcaption>
+</figure>

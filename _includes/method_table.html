@@ -2,7 +2,7 @@
 <div class="table-wrapper">
 <table>
   <thead><tr><th>Method</th><th>Path in taxonomy</th><th>Papers</th></tr></thead>
-  <tbody>{% for method in methods %}<tr><td>{{ method.method_leaf | escape }}</td><td>{{ method.method_path | escape }}</td><td>{{ method.n_studies }}</td></tr>{% endfor %}</tbody>
+  <tbody>{% for method in methods %}<tr><td>{{ method.method_leaf | escape }}</td><td>{{ method.method_path | escape }}</td><td><a href="#papers-{{ method.method_id }}" aria-label="See {{ method.n_studies }} supporting papers for {{ method.method_leaf | escape }}">{{ method.n_studies }}</a></td></tr>{% endfor %}</tbody>
 </table>
 </div>
-<p>Paper counts are multi-label literature memberships. Download the <a href="{{ '/data/method_taxonomy.csv' | relative_url }}">method definitions</a> and <a href="{{ '/data/method_assignments.csv' | relative_url }}">paper–method memberships</a> to trace each entry.</p>
+<p>Select a paper count to open its supporting papers. Counts are multi-label literature memberships. Download the <a href="{{ '/data/method_taxonomy.csv' | relative_url }}">method definitions</a> and <a href="{{ '/data/method_assignments.csv' | relative_url }}">paper–method memberships</a> to trace each entry.</p>

@@ -1,0 +1,20 @@
+<div class="paper-categories">
+{% for paper_category in include.categories %}
+  {% assign category_key = paper_category[include.match_key] %}
+  {% assign category_rows = include.memberships | where: include.membership_key, category_key %}
+  {% assign category_studies = category_rows | map: 'study_id' | uniq %}
+  {% assign category_anchor = paper_category[include.id_key] | prepend: 'papers-' | downcase %}
+  <details class="paper-category" id="{{ category_anchor }}">
+    <summary>
+      <span class="paper-category__label" id="{{ category_anchor }}-label">{% if include.show_code %}<span class="paper-category__code">{{ category_key | escape }}</span>{% endif %}{{ paper_category[include.label_key] | escape }}</span>
+      <span class="paper-category__count">{{ category_studies.size }} {% if category_studies.size == 1 %}paper{% else %}papers{% endif %}</span>
+    </summary>
+    <div class="paper-category__body">
+      {% if include.context_key %}<p class="paper-category__context">{{ paper_category[include.context_key] | escape }}</p>{% endif %}
+      <div class="paper-grid" role="group" aria-labelledby="{{ category_anchor }}-label">
+        {% include study_list.html study_ids=category_studies id_prefix=category_anchor %}
+      </div>
+    </div>
+  </details>
+{% endfor %}
+</div>
