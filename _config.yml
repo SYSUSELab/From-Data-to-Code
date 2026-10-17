@@ -34,6 +34,17 @@ footer_content: "© 2026 SYSUSELab. From Data to Code: Systematic Review of Qual
 data_dir: data
 lang: en
 
+# Keep supporting documents accessible without adding them to the main navigation.
+defaults:
+  - scope:
+      path: "images"
+    values:
+      nav_exclude: true
+  - scope:
+      path: "data/validation_report.md"
+    values:
+      nav_exclude: true
+
 # Keep development tools and repository-only guides out of the generated site.
 exclude:
   - README.md
